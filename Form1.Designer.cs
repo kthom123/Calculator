@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            TxtDisplay = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // TxtDisplay
             // 
-            textBox1.BackColor = Color.FromArgb(32, 32, 32);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Dock = DockStyle.Top;
-            textBox1.Font = new Font("Gadugi", 24F);
-            textBox1.ForeColor = Color.DarkGray;
-            textBox1.Location = new Point(0, 0);
-            textBox1.Margin = new Padding(0);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(350, 80);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "0";
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            TxtDisplay.BackColor = Color.FromArgb(32, 32, 32);
+            TxtDisplay.BorderStyle = BorderStyle.None;
+            TxtDisplay.Dock = DockStyle.Top;
+            TxtDisplay.Font = new Font("Gadugi", 34F);
+            TxtDisplay.ForeColor = Color.DarkGray;
+            TxtDisplay.Location = new Point(0, 0);
+            TxtDisplay.Margin = new Padding(0);
+            TxtDisplay.Multiline = true;
+            TxtDisplay.Name = "TxtDisplay";
+            TxtDisplay.Size = new Size(350, 72);
+            TxtDisplay.TabIndex = 0;
+            TxtDisplay.Text = "0";
+            TxtDisplay.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
-            Controls.Add(textBox1);
+            Controls.Add(TxtDisplay);
             Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
@@ -65,6 +65,6 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox TxtDisplay;
     }
 }
