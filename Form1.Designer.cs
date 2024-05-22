@@ -30,13 +30,12 @@
         {
             TxtDisplay2 = new TextBox();
             TxtDisplay1 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
+            customButton1 = new CustomButton();
+            customButton2 = new CustomButton();
+            customButton3 = new CustomButton();
+            customButton4 = new CustomButton();
+            customButton5 = new CustomButton();
+            customButton6 = new CustomButton();
             SuspendLayout();
             // 
             // TxtDisplay2
@@ -71,112 +70,131 @@
             TxtDisplay1.Text = "0";
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
             // 
-            // button1
+            // customButton1
             // 
-            button1.BackColor = Color.FromArgb(32, 32, 32);
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(286, 121);
-            button1.Margin = new Padding(0);
-            button1.Name = "button1";
-            button1.Size = new Size(55, 30);
-            button1.TabIndex = 2;
-            button1.Text = "M-";
-            button1.UseVisualStyleBackColor = false;
+            customButton1.BackColor = Color.FromArgb(32, 32, 32);
+            customButton1.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton1.BorderColor = Color.Silver;
+            customButton1.BorderRadius = 0;
+            customButton1.BorderSize = 0;
+            customButton1.FlatAppearance.BorderSize = 0;
+            customButton1.FlatStyle = FlatStyle.Flat;
+            customButton1.ForeColor = Color.White;
+            customButton1.Location = new Point(294, 123);
+            customButton1.Margin = new Padding(0);
+            customButton1.Name = "customButton1";
+            customButton1.Size = new Size(50, 30);
+            customButton1.TabIndex = 9;
+            customButton1.Text = "M^";
+            customButton1.TextColor = Color.White;
+            customButton1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // customButton2
             // 
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.Location = new Point(133, 258);
-            button2.Margin = new Padding(0);
-            button2.Name = "button2";
-            button2.Size = new Size(85, 55);
-            button2.TabIndex = 3;
-            button2.UseVisualStyleBackColor = true;
+            customButton2.BackColor = Color.FromArgb(32, 32, 32);
+            customButton2.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton2.BorderColor = Color.Silver;
+            customButton2.BorderRadius = 0;
+            customButton2.BorderSize = 0;
+            customButton2.FlatAppearance.BorderSize = 0;
+            customButton2.FlatStyle = FlatStyle.Flat;
+            customButton2.ForeColor = Color.White;
+            customButton2.Location = new Point(237, 123);
+            customButton2.Margin = new Padding(0);
+            customButton2.Name = "customButton2";
+            customButton2.Size = new Size(50, 30);
+            customButton2.TabIndex = 10;
+            customButton2.Text = "MS";
+            customButton2.TextColor = Color.White;
+            customButton2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // customButton3
             // 
-            button3.BackColor = Color.FromArgb(32, 32, 32);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(231, 121);
-            button3.Margin = new Padding(0);
-            button3.Name = "button3";
-            button3.Size = new Size(55, 30);
-            button3.TabIndex = 4;
-            button3.Text = "M-";
-            button3.UseVisualStyleBackColor = false;
+            customButton3.BackColor = Color.FromArgb(32, 32, 32);
+            customButton3.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton3.BorderColor = Color.Silver;
+            customButton3.BorderRadius = 0;
+            customButton3.BorderSize = 0;
+            customButton3.FlatAppearance.BorderSize = 0;
+            customButton3.FlatStyle = FlatStyle.Flat;
+            customButton3.ForeColor = Color.White;
+            customButton3.Location = new Point(180, 123);
+            customButton3.Margin = new Padding(0);
+            customButton3.Name = "customButton3";
+            customButton3.Size = new Size(50, 30);
+            customButton3.TabIndex = 11;
+            customButton3.Text = "M-";
+            customButton3.TextColor = Color.White;
+            customButton3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // customButton4
             // 
-            button4.BackColor = Color.FromArgb(32, 32, 32);
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(176, 121);
-            button4.Margin = new Padding(0);
-            button4.Name = "button4";
-            button4.Size = new Size(55, 30);
-            button4.TabIndex = 5;
-            button4.Text = "M-";
-            button4.UseVisualStyleBackColor = false;
+            customButton4.BackColor = Color.FromArgb(32, 32, 32);
+            customButton4.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton4.BorderColor = Color.Silver;
+            customButton4.BorderRadius = 0;
+            customButton4.BorderSize = 0;
+            customButton4.FlatAppearance.BorderSize = 0;
+            customButton4.FlatStyle = FlatStyle.Flat;
+            customButton4.ForeColor = Color.White;
+            customButton4.Location = new Point(123, 123);
+            customButton4.Margin = new Padding(0);
+            customButton4.Name = "customButton4";
+            customButton4.Size = new Size(50, 30);
+            customButton4.TabIndex = 12;
+            customButton4.Text = "M+";
+            customButton4.TextColor = Color.White;
+            customButton4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // customButton5
             // 
-            button5.BackColor = Color.FromArgb(32, 32, 32);
-            button5.BackgroundImageLayout = ImageLayout.None;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.White;
-            button5.Location = new Point(121, 121);
-            button5.Margin = new Padding(0);
-            button5.Name = "button5";
-            button5.Size = new Size(55, 30);
-            button5.TabIndex = 6;
-            button5.Text = "M-";
-            button5.UseVisualStyleBackColor = false;
+            customButton5.BackColor = Color.FromArgb(32, 32, 32);
+            customButton5.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton5.BorderColor = Color.Silver;
+            customButton5.BorderRadius = 0;
+            customButton5.BorderSize = 0;
+            customButton5.FlatAppearance.BorderSize = 0;
+            customButton5.FlatStyle = FlatStyle.Flat;
+            customButton5.ForeColor = Color.White;
+            customButton5.Location = new Point(66, 123);
+            customButton5.Margin = new Padding(0);
+            customButton5.Name = "customButton5";
+            customButton5.Size = new Size(50, 30);
+            customButton5.TabIndex = 13;
+            customButton5.Text = "MR";
+            customButton5.TextColor = Color.White;
+            customButton5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // customButton6
             // 
-            button6.BackColor = Color.FromArgb(32, 32, 32);
-            button6.BackgroundImageLayout = ImageLayout.None;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.ForeColor = Color.White;
-            button6.Location = new Point(66, 121);
-            button6.Margin = new Padding(0);
-            button6.Name = "button6";
-            button6.Size = new Size(55, 30);
-            button6.TabIndex = 7;
-            button6.Text = "M-";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            button7.BackColor = Color.FromArgb(32, 32, 32);
-            button7.BackgroundImageLayout = ImageLayout.None;
-            button7.FlatStyle = FlatStyle.Flat;
-            button7.ForeColor = Color.White;
-            button7.Location = new Point(11, 121);
-            button7.Margin = new Padding(0);
-            button7.Name = "button7";
-            button7.Size = new Size(55, 30);
-            button7.TabIndex = 8;
-            button7.Text = "M-";
-            button7.UseVisualStyleBackColor = false;
+            customButton6.BackColor = Color.FromArgb(32, 32, 32);
+            customButton6.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton6.BorderColor = Color.Silver;
+            customButton6.BorderRadius = 0;
+            customButton6.BorderSize = 0;
+            customButton6.FlatAppearance.BorderSize = 0;
+            customButton6.FlatStyle = FlatStyle.Flat;
+            customButton6.ForeColor = Color.White;
+            customButton6.Location = new Point(9, 123);
+            customButton6.Margin = new Padding(0);
+            customButton6.Name = "customButton6";
+            customButton6.Size = new Size(50, 30);
+            customButton6.TabIndex = 14;
+            customButton6.Text = "MC";
+            customButton6.TextColor = Color.White;
+            customButton6.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(customButton6);
+            Controls.Add(customButton5);
+            Controls.Add(customButton4);
+            Controls.Add(customButton3);
+            Controls.Add(customButton2);
+            Controls.Add(customButton1);
             Controls.Add(TxtDisplay1);
             Controls.Add(TxtDisplay2);
             Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -193,12 +211,11 @@
 
         private TextBox TxtDisplay2;
         private TextBox TxtDisplay1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
+        private CustomButton customButton1;
+        private CustomButton customButton2;
+        private CustomButton customButton3;
+        private CustomButton customButton4;
+        private CustomButton customButton5;
+        private CustomButton customButton6;
     }
 }
