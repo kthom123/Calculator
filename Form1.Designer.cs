@@ -28,35 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            panel2 = new Panel();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // panel1
+            // textBox1
             // 
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(350, 40);
-            panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 530);
-            panel2.Margin = new Padding(0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(350, 40);
-            panel2.TabIndex = 1;
+            textBox1.BackColor = Color.FromArgb(32, 32, 32);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Dock = DockStyle.Top;
+            textBox1.Font = new Font("Gadugi", 24F);
+            textBox1.ForeColor = Color.DarkGray;
+            textBox1.Location = new Point(0, 0);
+            textBox1.Margin = new Padding(0);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(350, 80);
+            textBox1.TabIndex = 0;
+            textBox1.Text = "0";
+            textBox1.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
+            Controls.Add(textBox1);
             Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
@@ -64,11 +60,11 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Panel panel1;
-        private Panel panel2;
+        private TextBox textBox1;
     }
 }
