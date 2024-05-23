@@ -38,6 +38,9 @@
             customButton5 = new CustomButton();
             customButton6 = new CustomButton();
             customButton7 = new CustomButton();
+            customButton8 = new CustomButton();
+            customButton9 = new CustomButton();
+            customButton10 = new CustomButton();
             SuspendLayout();
             // 
             // TxtDisplay2
@@ -77,7 +80,7 @@
             customButton1.BackColor = Color.FromArgb(32, 32, 32);
             customButton1.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton1.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton1.BorderRadius = 0;
+            customButton1.BorderRadius = 15;
             customButton1.BorderSize = 0;
             customButton1.FlatAppearance.BorderSize = 0;
             customButton1.FlatStyle = FlatStyle.Flat;
@@ -96,7 +99,7 @@
             customButton2.BackColor = Color.FromArgb(32, 32, 32);
             customButton2.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton2.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton2.BorderRadius = 0;
+            customButton2.BorderRadius = 15;
             customButton2.BorderSize = 0;
             customButton2.FlatAppearance.BorderSize = 0;
             customButton2.FlatStyle = FlatStyle.Flat;
@@ -115,7 +118,7 @@
             customButton3.BackColor = Color.FromArgb(32, 32, 32);
             customButton3.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton3.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton3.BorderRadius = 0;
+            customButton3.BorderRadius = 15;
             customButton3.BorderSize = 0;
             customButton3.FlatAppearance.BorderSize = 0;
             customButton3.FlatStyle = FlatStyle.Flat;
@@ -134,7 +137,7 @@
             customButton4.BackColor = Color.FromArgb(32, 32, 32);
             customButton4.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton4.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton4.BorderRadius = 0;
+            customButton4.BorderRadius = 15;
             customButton4.BorderSize = 0;
             customButton4.FlatAppearance.BorderSize = 0;
             customButton4.FlatStyle = FlatStyle.Flat;
@@ -153,7 +156,7 @@
             customButton5.BackColor = Color.FromArgb(32, 32, 32);
             customButton5.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton5.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton5.BorderRadius = 0;
+            customButton5.BorderRadius = 15;
             customButton5.BorderSize = 0;
             customButton5.FlatAppearance.BorderSize = 0;
             customButton5.FlatStyle = FlatStyle.Flat;
@@ -172,7 +175,7 @@
             customButton6.BackColor = Color.FromArgb(32, 32, 32);
             customButton6.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton6.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton6.BorderRadius = 0;
+            customButton6.BorderRadius = 15;
             customButton6.BorderSize = 0;
             customButton6.FlatAppearance.BorderSize = 0;
             customButton6.FlatStyle = FlatStyle.Flat;
@@ -197,7 +200,7 @@
             customButton7.FlatStyle = FlatStyle.Flat;
             customButton7.ForeColor = Color.White;
             customButton7.Image = (Image)resources.GetObject("customButton7.Image");
-            customButton7.Location = new Point(256, 194);
+            customButton7.Location = new Point(264, 194);
             customButton7.Margin = new Padding(0);
             customButton7.Name = "customButton7";
             customButton7.Size = new Size(85, 50);
@@ -205,11 +208,71 @@
             customButton7.TextColor = Color.White;
             customButton7.UseVisualStyleBackColor = false;
             // 
+            // customButton8
+            // 
+            customButton8.BackColor = Color.FromArgb(32, 32, 32);
+            customButton8.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton8.BorderColor = Color.FromArgb(32, 32, 32);
+            customButton8.BorderRadius = 20;
+            customButton8.BorderSize = 0;
+            customButton8.FlatAppearance.BorderSize = 0;
+            customButton8.FlatStyle = FlatStyle.Flat;
+            customButton8.ForeColor = Color.White;
+            customButton8.Location = new Point(176, 194);
+            customButton8.Margin = new Padding(0);
+            customButton8.Name = "customButton8";
+            customButton8.Size = new Size(85, 50);
+            customButton8.TabIndex = 16;
+            customButton8.Text = "C";
+            customButton8.TextColor = Color.White;
+            customButton8.UseVisualStyleBackColor = false;
+            // 
+            // customButton9
+            // 
+            customButton9.BackColor = Color.FromArgb(32, 32, 32);
+            customButton9.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton9.BorderColor = Color.FromArgb(32, 32, 32);
+            customButton9.BorderRadius = 20;
+            customButton9.BorderSize = 0;
+            customButton9.FlatAppearance.BorderSize = 0;
+            customButton9.FlatStyle = FlatStyle.Flat;
+            customButton9.ForeColor = Color.White;
+            customButton9.Location = new Point(88, 194);
+            customButton9.Margin = new Padding(0);
+            customButton9.Name = "customButton9";
+            customButton9.Size = new Size(85, 50);
+            customButton9.TabIndex = 17;
+            customButton9.Text = "CE";
+            customButton9.TextColor = Color.White;
+            customButton9.UseVisualStyleBackColor = false;
+            // 
+            // customButton10
+            // 
+            customButton10.BackColor = Color.FromArgb(32, 32, 32);
+            customButton10.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton10.BorderColor = Color.FromArgb(32, 32, 32);
+            customButton10.BorderRadius = 20;
+            customButton10.BorderSize = 0;
+            customButton10.FlatAppearance.BorderSize = 0;
+            customButton10.FlatStyle = FlatStyle.Flat;
+            customButton10.ForeColor = Color.White;
+            customButton10.Location = new Point(0, 194);
+            customButton10.Margin = new Padding(0);
+            customButton10.Name = "customButton10";
+            customButton10.Size = new Size(85, 50);
+            customButton10.TabIndex = 18;
+            customButton10.Text = "%";
+            customButton10.TextColor = Color.White;
+            customButton10.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
+            Controls.Add(customButton10);
+            Controls.Add(customButton9);
+            Controls.Add(customButton8);
             Controls.Add(customButton7);
             Controls.Add(customButton6);
             Controls.Add(customButton5);
@@ -240,5 +303,8 @@
         private CustomButton customButton5;
         private CustomButton customButton6;
         private CustomButton customButton7;
+        private CustomButton customButton8;
+        private CustomButton customButton9;
+        private CustomButton customButton10;
     }
 }
