@@ -689,7 +689,6 @@
             TxtDisplay2.Name = "TxtDisplay2";
             TxtDisplay2.Size = new Size(350, 30);
             TxtDisplay2.TabIndex = 39;
-            TxtDisplay2.Text = "0";
             TxtDisplay2.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
