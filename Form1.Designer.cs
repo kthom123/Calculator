@@ -61,6 +61,7 @@
             customButton28 = new CustomButton();
             customButton29 = new CustomButton();
             customButton30 = new CustomButton();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // TxtDisplay2
@@ -68,16 +69,15 @@
             TxtDisplay2.BackColor = Color.FromArgb(32, 32, 32);
             TxtDisplay2.BorderStyle = BorderStyle.None;
             TxtDisplay2.Dock = DockStyle.Top;
-            TxtDisplay2.Font = new Font("Gadugi", 14F);
+            TxtDisplay2.Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtDisplay2.ForeColor = Color.DarkGray;
             TxtDisplay2.Location = new Point(0, 0);
             TxtDisplay2.Margin = new Padding(0);
             TxtDisplay2.Multiline = true;
             TxtDisplay2.Name = "TxtDisplay2";
-            TxtDisplay2.Size = new Size(350, 32);
+            TxtDisplay2.Size = new Size(350, 30);
             TxtDisplay2.TabIndex = 0;
-            TxtDisplay2.Text = "0";
-            TxtDisplay2.TextAlign = HorizontalAlignment.Right;
+            TxtDisplay2.Text = "Calculator";
             // 
             // TxtDisplay1
             // 
@@ -86,11 +86,11 @@
             TxtDisplay1.Dock = DockStyle.Top;
             TxtDisplay1.Font = new Font("Gadugi", 34F, FontStyle.Bold);
             TxtDisplay1.ForeColor = Color.Silver;
-            TxtDisplay1.Location = new Point(0, 32);
+            TxtDisplay1.Location = new Point(0, 30);
             TxtDisplay1.Margin = new Padding(0);
             TxtDisplay1.Multiline = true;
             TxtDisplay1.Name = "TxtDisplay1";
-            TxtDisplay1.Size = new Size(350, 72);
+            TxtDisplay1.Size = new Size(350, 74);
             TxtDisplay1.TabIndex = 1;
             TxtDisplay1.Text = "0";
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
@@ -105,7 +105,7 @@
             customButton1.FlatAppearance.BorderSize = 0;
             customButton1.FlatStyle = FlatStyle.Flat;
             customButton1.ForeColor = Color.White;
-            customButton1.Location = new Point(294, 123);
+            customButton1.Location = new Point(294, 162);
             customButton1.Margin = new Padding(0);
             customButton1.Name = "customButton1";
             customButton1.Size = new Size(50, 30);
@@ -124,7 +124,7 @@
             customButton2.FlatAppearance.BorderSize = 0;
             customButton2.FlatStyle = FlatStyle.Flat;
             customButton2.ForeColor = Color.White;
-            customButton2.Location = new Point(237, 123);
+            customButton2.Location = new Point(236, 162);
             customButton2.Margin = new Padding(0);
             customButton2.Name = "customButton2";
             customButton2.Size = new Size(50, 30);
@@ -143,7 +143,7 @@
             customButton3.FlatAppearance.BorderSize = 0;
             customButton3.FlatStyle = FlatStyle.Flat;
             customButton3.ForeColor = Color.White;
-            customButton3.Location = new Point(180, 123);
+            customButton3.Location = new Point(178, 162);
             customButton3.Margin = new Padding(0);
             customButton3.Name = "customButton3";
             customButton3.Size = new Size(50, 30);
@@ -162,7 +162,7 @@
             customButton4.FlatAppearance.BorderSize = 0;
             customButton4.FlatStyle = FlatStyle.Flat;
             customButton4.ForeColor = Color.White;
-            customButton4.Location = new Point(123, 123);
+            customButton4.Location = new Point(120, 162);
             customButton4.Margin = new Padding(0);
             customButton4.Name = "customButton4";
             customButton4.Size = new Size(50, 30);
@@ -181,7 +181,7 @@
             customButton5.FlatAppearance.BorderSize = 0;
             customButton5.FlatStyle = FlatStyle.Flat;
             customButton5.ForeColor = Color.White;
-            customButton5.Location = new Point(66, 123);
+            customButton5.Location = new Point(62, 162);
             customButton5.Margin = new Padding(0);
             customButton5.Name = "customButton5";
             customButton5.Size = new Size(50, 30);
@@ -200,7 +200,7 @@
             customButton6.FlatAppearance.BorderSize = 0;
             customButton6.FlatStyle = FlatStyle.Flat;
             customButton6.ForeColor = Color.White;
-            customButton6.Location = new Point(9, 123);
+            customButton6.Location = new Point(4, 162);
             customButton6.Margin = new Padding(0);
             customButton6.Name = "customButton6";
             customButton6.Size = new Size(50, 30);
@@ -220,7 +220,7 @@
             customButton7.FlatStyle = FlatStyle.Flat;
             customButton7.ForeColor = Color.White;
             customButton7.Image = (Image)resources.GetObject("customButton7.Image");
-            customButton7.Location = new Point(264, 194);
+            customButton7.Location = new Point(265, 216);
             customButton7.Margin = new Padding(0);
             customButton7.Name = "customButton7";
             customButton7.Size = new Size(85, 50);
@@ -238,7 +238,7 @@
             customButton8.FlatAppearance.BorderSize = 0;
             customButton8.FlatStyle = FlatStyle.Flat;
             customButton8.ForeColor = Color.White;
-            customButton8.Location = new Point(176, 194);
+            customButton8.Location = new Point(177, 216);
             customButton8.Margin = new Padding(0);
             customButton8.Name = "customButton8";
             customButton8.Size = new Size(85, 50);
@@ -257,7 +257,7 @@
             customButton9.FlatAppearance.BorderSize = 0;
             customButton9.FlatStyle = FlatStyle.Flat;
             customButton9.ForeColor = Color.White;
-            customButton9.Location = new Point(88, 194);
+            customButton9.Location = new Point(89, 216);
             customButton9.Margin = new Padding(0);
             customButton9.Name = "customButton9";
             customButton9.Size = new Size(85, 50);
@@ -276,7 +276,7 @@
             customButton10.FlatAppearance.BorderSize = 0;
             customButton10.FlatStyle = FlatStyle.Flat;
             customButton10.ForeColor = Color.White;
-            customButton10.Location = new Point(0, 194);
+            customButton10.Location = new Point(1, 216);
             customButton10.Margin = new Padding(0);
             customButton10.Name = "customButton10";
             customButton10.Size = new Size(85, 50);
@@ -295,12 +295,12 @@
             customButton11.FlatAppearance.BorderSize = 0;
             customButton11.FlatStyle = FlatStyle.Flat;
             customButton11.ForeColor = Color.White;
-            customButton11.Location = new Point(1, 260);
+            customButton11.Location = new Point(1, 275);
             customButton11.Margin = new Padding(0);
             customButton11.Name = "customButton11";
             customButton11.Size = new Size(85, 50);
             customButton11.TabIndex = 22;
-            customButton11.Text = "%";
+            customButton11.Text = "¹⁄ₓ";
             customButton11.TextColor = Color.White;
             customButton11.UseVisualStyleBackColor = false;
             // 
@@ -314,12 +314,12 @@
             customButton12.FlatAppearance.BorderSize = 0;
             customButton12.FlatStyle = FlatStyle.Flat;
             customButton12.ForeColor = Color.White;
-            customButton12.Location = new Point(89, 260);
+            customButton12.Location = new Point(89, 275);
             customButton12.Margin = new Padding(0);
             customButton12.Name = "customButton12";
             customButton12.Size = new Size(85, 50);
             customButton12.TabIndex = 21;
-            customButton12.Text = "CE";
+            customButton12.Text = "x²";
             customButton12.TextColor = Color.White;
             customButton12.UseVisualStyleBackColor = false;
             // 
@@ -333,12 +333,12 @@
             customButton13.FlatAppearance.BorderSize = 0;
             customButton13.FlatStyle = FlatStyle.Flat;
             customButton13.ForeColor = Color.White;
-            customButton13.Location = new Point(177, 260);
+            customButton13.Location = new Point(177, 275);
             customButton13.Margin = new Padding(0);
             customButton13.Name = "customButton13";
             customButton13.Size = new Size(85, 50);
             customButton13.TabIndex = 20;
-            customButton13.Text = "C";
+            customButton13.Text = "√x";
             customButton13.TextColor = Color.White;
             customButton13.UseVisualStyleBackColor = false;
             // 
@@ -352,12 +352,12 @@
             customButton14.FlatAppearance.BorderSize = 0;
             customButton14.FlatStyle = FlatStyle.Flat;
             customButton14.ForeColor = Color.White;
-            customButton14.Image = (Image)resources.GetObject("customButton14.Image");
-            customButton14.Location = new Point(265, 260);
+            customButton14.Location = new Point(265, 275);
             customButton14.Margin = new Padding(0);
             customButton14.Name = "customButton14";
             customButton14.Size = new Size(85, 50);
             customButton14.TabIndex = 19;
+            customButton14.Text = "÷";
             customButton14.TextColor = Color.White;
             customButton14.UseVisualStyleBackColor = false;
             // 
@@ -371,12 +371,12 @@
             customButton15.FlatAppearance.BorderSize = 0;
             customButton15.FlatStyle = FlatStyle.Flat;
             customButton15.ForeColor = Color.White;
-            customButton15.Location = new Point(-5, 325);
+            customButton15.Location = new Point(1, 334);
             customButton15.Margin = new Padding(0);
             customButton15.Name = "customButton15";
             customButton15.Size = new Size(85, 50);
             customButton15.TabIndex = 26;
-            customButton15.Text = "%";
+            customButton15.Text = "7";
             customButton15.TextColor = Color.White;
             customButton15.UseVisualStyleBackColor = false;
             // 
@@ -390,12 +390,12 @@
             customButton16.FlatAppearance.BorderSize = 0;
             customButton16.FlatStyle = FlatStyle.Flat;
             customButton16.ForeColor = Color.White;
-            customButton16.Location = new Point(83, 325);
+            customButton16.Location = new Point(89, 334);
             customButton16.Margin = new Padding(0);
             customButton16.Name = "customButton16";
             customButton16.Size = new Size(85, 50);
             customButton16.TabIndex = 25;
-            customButton16.Text = "CE";
+            customButton16.Text = "8";
             customButton16.TextColor = Color.White;
             customButton16.UseVisualStyleBackColor = false;
             // 
@@ -409,12 +409,12 @@
             customButton17.FlatAppearance.BorderSize = 0;
             customButton17.FlatStyle = FlatStyle.Flat;
             customButton17.ForeColor = Color.White;
-            customButton17.Location = new Point(171, 325);
+            customButton17.Location = new Point(177, 334);
             customButton17.Margin = new Padding(0);
             customButton17.Name = "customButton17";
             customButton17.Size = new Size(85, 50);
             customButton17.TabIndex = 24;
-            customButton17.Text = "C";
+            customButton17.Text = "9";
             customButton17.TextColor = Color.White;
             customButton17.UseVisualStyleBackColor = false;
             // 
@@ -428,12 +428,12 @@
             customButton18.FlatAppearance.BorderSize = 0;
             customButton18.FlatStyle = FlatStyle.Flat;
             customButton18.ForeColor = Color.White;
-            customButton18.Image = (Image)resources.GetObject("customButton18.Image");
-            customButton18.Location = new Point(259, 325);
+            customButton18.Location = new Point(265, 334);
             customButton18.Margin = new Padding(0);
             customButton18.Name = "customButton18";
             customButton18.Size = new Size(85, 50);
             customButton18.TabIndex = 23;
+            customButton18.Text = "×";
             customButton18.TextColor = Color.White;
             customButton18.UseVisualStyleBackColor = false;
             // 
@@ -447,12 +447,12 @@
             customButton19.FlatAppearance.BorderSize = 0;
             customButton19.FlatStyle = FlatStyle.Flat;
             customButton19.ForeColor = Color.White;
-            customButton19.Location = new Point(0, 385);
+            customButton19.Location = new Point(1, 393);
             customButton19.Margin = new Padding(0);
             customButton19.Name = "customButton19";
             customButton19.Size = new Size(85, 50);
             customButton19.TabIndex = 30;
-            customButton19.Text = "%";
+            customButton19.Text = "4";
             customButton19.TextColor = Color.White;
             customButton19.UseVisualStyleBackColor = false;
             // 
@@ -466,12 +466,12 @@
             customButton20.FlatAppearance.BorderSize = 0;
             customButton20.FlatStyle = FlatStyle.Flat;
             customButton20.ForeColor = Color.White;
-            customButton20.Location = new Point(88, 385);
+            customButton20.Location = new Point(89, 393);
             customButton20.Margin = new Padding(0);
             customButton20.Name = "customButton20";
             customButton20.Size = new Size(85, 50);
             customButton20.TabIndex = 29;
-            customButton20.Text = "CE";
+            customButton20.Text = "5";
             customButton20.TextColor = Color.White;
             customButton20.UseVisualStyleBackColor = false;
             // 
@@ -485,12 +485,12 @@
             customButton21.FlatAppearance.BorderSize = 0;
             customButton21.FlatStyle = FlatStyle.Flat;
             customButton21.ForeColor = Color.White;
-            customButton21.Location = new Point(176, 385);
+            customButton21.Location = new Point(177, 393);
             customButton21.Margin = new Padding(0);
             customButton21.Name = "customButton21";
             customButton21.Size = new Size(85, 50);
             customButton21.TabIndex = 28;
-            customButton21.Text = "C";
+            customButton21.Text = "6";
             customButton21.TextColor = Color.White;
             customButton21.UseVisualStyleBackColor = false;
             // 
@@ -504,12 +504,12 @@
             customButton22.FlatAppearance.BorderSize = 0;
             customButton22.FlatStyle = FlatStyle.Flat;
             customButton22.ForeColor = Color.White;
-            customButton22.Image = (Image)resources.GetObject("customButton22.Image");
-            customButton22.Location = new Point(264, 385);
+            customButton22.Location = new Point(265, 393);
             customButton22.Margin = new Padding(0);
             customButton22.Name = "customButton22";
             customButton22.Size = new Size(85, 50);
             customButton22.TabIndex = 27;
+            customButton22.Text = "-";
             customButton22.TextColor = Color.White;
             customButton22.UseVisualStyleBackColor = false;
             // 
@@ -523,12 +523,12 @@
             customButton23.FlatAppearance.BorderSize = 0;
             customButton23.FlatStyle = FlatStyle.Flat;
             customButton23.ForeColor = Color.White;
-            customButton23.Location = new Point(0, 445);
+            customButton23.Location = new Point(1, 452);
             customButton23.Margin = new Padding(0);
             customButton23.Name = "customButton23";
             customButton23.Size = new Size(85, 50);
             customButton23.TabIndex = 34;
-            customButton23.Text = "%";
+            customButton23.Text = "1";
             customButton23.TextColor = Color.White;
             customButton23.UseVisualStyleBackColor = false;
             // 
@@ -542,12 +542,12 @@
             customButton24.FlatAppearance.BorderSize = 0;
             customButton24.FlatStyle = FlatStyle.Flat;
             customButton24.ForeColor = Color.White;
-            customButton24.Location = new Point(88, 445);
+            customButton24.Location = new Point(89, 452);
             customButton24.Margin = new Padding(0);
             customButton24.Name = "customButton24";
             customButton24.Size = new Size(85, 50);
             customButton24.TabIndex = 33;
-            customButton24.Text = "CE";
+            customButton24.Text = "2";
             customButton24.TextColor = Color.White;
             customButton24.UseVisualStyleBackColor = false;
             // 
@@ -561,12 +561,12 @@
             customButton25.FlatAppearance.BorderSize = 0;
             customButton25.FlatStyle = FlatStyle.Flat;
             customButton25.ForeColor = Color.White;
-            customButton25.Location = new Point(176, 445);
+            customButton25.Location = new Point(177, 452);
             customButton25.Margin = new Padding(0);
             customButton25.Name = "customButton25";
             customButton25.Size = new Size(85, 50);
             customButton25.TabIndex = 32;
-            customButton25.Text = "C";
+            customButton25.Text = "3";
             customButton25.TextColor = Color.White;
             customButton25.UseVisualStyleBackColor = false;
             // 
@@ -580,12 +580,12 @@
             customButton26.FlatAppearance.BorderSize = 0;
             customButton26.FlatStyle = FlatStyle.Flat;
             customButton26.ForeColor = Color.White;
-            customButton26.Image = (Image)resources.GetObject("customButton26.Image");
-            customButton26.Location = new Point(264, 445);
+            customButton26.Location = new Point(265, 452);
             customButton26.Margin = new Padding(0);
             customButton26.Name = "customButton26";
             customButton26.Size = new Size(85, 50);
             customButton26.TabIndex = 31;
+            customButton26.Text = "+";
             customButton26.TextColor = Color.White;
             customButton26.UseVisualStyleBackColor = false;
             // 
@@ -604,7 +604,7 @@
             customButton27.Name = "customButton27";
             customButton27.Size = new Size(85, 50);
             customButton27.TabIndex = 38;
-            customButton27.Text = "%";
+            customButton27.Text = "±";
             customButton27.TextColor = Color.White;
             customButton27.UseVisualStyleBackColor = false;
             // 
@@ -623,7 +623,7 @@
             customButton28.Name = "customButton28";
             customButton28.Size = new Size(85, 50);
             customButton28.TabIndex = 37;
-            customButton28.Text = "CE";
+            customButton28.Text = "0";
             customButton28.TextColor = Color.White;
             customButton28.UseVisualStyleBackColor = false;
             // 
@@ -642,7 +642,7 @@
             customButton29.Name = "customButton29";
             customButton29.Size = new Size(85, 50);
             customButton29.TabIndex = 36;
-            customButton29.Text = "C";
+            customButton29.Text = ".";
             customButton29.TextColor = Color.White;
             customButton29.UseVisualStyleBackColor = false;
             // 
@@ -656,20 +656,37 @@
             customButton30.FlatAppearance.BorderSize = 0;
             customButton30.FlatStyle = FlatStyle.Flat;
             customButton30.ForeColor = Color.White;
-            customButton30.Image = (Image)resources.GetObject("customButton30.Image");
             customButton30.Location = new Point(265, 511);
             customButton30.Margin = new Padding(0);
             customButton30.Name = "customButton30";
             customButton30.Size = new Size(85, 50);
             customButton30.TabIndex = 35;
+            customButton30.Text = "=";
             customButton30.TextColor = Color.White;
             customButton30.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(32, 32, 32);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Dock = DockStyle.Top;
+            textBox1.Font = new Font("Gadugi", 14F);
+            textBox1.ForeColor = Color.DarkGray;
+            textBox1.Location = new Point(0, 104);
+            textBox1.Margin = new Padding(0);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(350, 30);
+            textBox1.TabIndex = 39;
+            textBox1.Text = "0";
+            textBox1.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
+            Controls.Add(textBox1);
             Controls.Add(customButton27);
             Controls.Add(customButton28);
             Controls.Add(customButton29);
@@ -746,5 +763,6 @@
         private CustomButton customButton28;
         private CustomButton customButton29;
         private CustomButton customButton30;
+        private TextBox textBox1;
     }
 }
