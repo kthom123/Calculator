@@ -360,6 +360,7 @@
             BtnDivide.Text = "÷";
             BtnDivide.TextColor = Color.White;
             BtnDivide.UseVisualStyleBackColor = false;
+            BtnDivide.Click += BtnMathOperation_Click;
             // 
             // Btn7
             // 
@@ -439,6 +440,7 @@
             BtnMultiply.Text = "×";
             BtnMultiply.TextColor = Color.White;
             BtnMultiply.UseVisualStyleBackColor = false;
+            BtnMultiply.Click += BtnMathOperation_Click;
             // 
             // Btn4
             // 
@@ -518,6 +520,7 @@
             BtnMinus.Text = "-";
             BtnMinus.TextColor = Color.White;
             BtnMinus.UseVisualStyleBackColor = false;
+            BtnMinus.Click += BtnMathOperation_Click;
             // 
             // Btn1
             // 
@@ -597,6 +600,7 @@
             BtnPlus.Text = "+";
             BtnPlus.TextColor = Color.White;
             BtnPlus.UseVisualStyleBackColor = false;
+            BtnPlus.Click += BtnMathOperation_Click;
             // 
             // BtnPM
             // 
