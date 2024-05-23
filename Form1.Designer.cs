@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            TxtDisplay2 = new TextBox();
+            Title = new TextBox();
             TxtDisplay1 = new TextBox();
             customButton1 = new CustomButton();
             customButton2 = new CustomButton();
@@ -61,23 +61,23 @@
             Btn0 = new CustomButton();
             BtnDecimal = new CustomButton();
             BtnEquals = new CustomButton();
-            textBox1 = new TextBox();
+            TxtDisplay2 = new TextBox();
             SuspendLayout();
             // 
-            // TxtDisplay2
+            // Title
             // 
-            TxtDisplay2.BackColor = Color.FromArgb(32, 32, 32);
-            TxtDisplay2.BorderStyle = BorderStyle.None;
-            TxtDisplay2.Dock = DockStyle.Top;
-            TxtDisplay2.Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtDisplay2.ForeColor = Color.DarkGray;
-            TxtDisplay2.Location = new Point(0, 0);
-            TxtDisplay2.Margin = new Padding(0);
-            TxtDisplay2.Multiline = true;
-            TxtDisplay2.Name = "TxtDisplay2";
-            TxtDisplay2.Size = new Size(350, 30);
-            TxtDisplay2.TabIndex = 0;
-            TxtDisplay2.Text = "Calculator";
+            Title.BackColor = Color.FromArgb(32, 32, 32);
+            Title.BorderStyle = BorderStyle.None;
+            Title.Dock = DockStyle.Top;
+            Title.Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Title.ForeColor = Color.DarkGray;
+            Title.Location = new Point(0, 0);
+            Title.Margin = new Padding(0);
+            Title.Multiline = true;
+            Title.Name = "Title";
+            Title.Size = new Size(350, 30);
+            Title.TabIndex = 0;
+            Title.Text = "Calculator";
             // 
             // TxtDisplay1
             // 
@@ -676,28 +676,28 @@
             BtnEquals.TextColor = Color.White;
             BtnEquals.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // TxtDisplay2
             // 
-            textBox1.BackColor = Color.FromArgb(32, 32, 32);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Dock = DockStyle.Top;
-            textBox1.Font = new Font("Gadugi", 14F);
-            textBox1.ForeColor = Color.DarkGray;
-            textBox1.Location = new Point(0, 104);
-            textBox1.Margin = new Padding(0);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(350, 30);
-            textBox1.TabIndex = 39;
-            textBox1.Text = "0";
-            textBox1.TextAlign = HorizontalAlignment.Right;
+            TxtDisplay2.BackColor = Color.FromArgb(32, 32, 32);
+            TxtDisplay2.BorderStyle = BorderStyle.None;
+            TxtDisplay2.Dock = DockStyle.Top;
+            TxtDisplay2.Font = new Font("Gadugi", 14F);
+            TxtDisplay2.ForeColor = Color.DarkGray;
+            TxtDisplay2.Location = new Point(0, 104);
+            TxtDisplay2.Margin = new Padding(0);
+            TxtDisplay2.Multiline = true;
+            TxtDisplay2.Name = "TxtDisplay2";
+            TxtDisplay2.Size = new Size(350, 30);
+            TxtDisplay2.TabIndex = 39;
+            TxtDisplay2.Text = "0";
+            TxtDisplay2.TextAlign = HorizontalAlignment.Right;
             // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
-            Controls.Add(textBox1);
+            Controls.Add(TxtDisplay2);
             Controls.Add(BtnPM);
             Controls.Add(Btn0);
             Controls.Add(BtnDecimal);
@@ -729,7 +729,7 @@
             Controls.Add(customButton2);
             Controls.Add(customButton1);
             Controls.Add(TxtDisplay1);
-            Controls.Add(TxtDisplay2);
+            Controls.Add(Title);
             Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.White;
             FormBorderStyle = FormBorderStyle.None;
@@ -742,7 +742,7 @@
 
         #endregion
 
-        private TextBox TxtDisplay2;
+        private TextBox Title;
         private TextBox TxtDisplay1;
         private CustomButton customButton1;
         private CustomButton customButton2;
@@ -774,6 +774,6 @@
         private CustomButton Btn0;
         private CustomButton BtnDecimal;
         private CustomButton BtnEquals;
-        private TextBox textBox1;
+        private TextBox TxtDisplay2;
     }
 }
