@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TxtDisplay2 = new TextBox();
             TxtDisplay1 = new TextBox();
             customButton1 = new CustomButton();
@@ -190,16 +191,17 @@
             customButton7.BackColor = Color.FromArgb(32, 32, 32);
             customButton7.BackgroundColor = Color.FromArgb(32, 32, 32);
             customButton7.BorderColor = Color.FromArgb(32, 32, 32);
-            customButton7.BorderRadius = 0;
+            customButton7.BorderRadius = 20;
             customButton7.BorderSize = 0;
             customButton7.FlatAppearance.BorderSize = 0;
             customButton7.FlatStyle = FlatStyle.Flat;
             customButton7.ForeColor = Color.White;
-            customButton7.Location = new Point(99, 276);
+            customButton7.Image = (Image)resources.GetObject("customButton7.Image");
+            customButton7.Location = new Point(256, 194);
+            customButton7.Margin = new Padding(0);
             customButton7.Name = "customButton7";
-            customButton7.Size = new Size(188, 50);
+            customButton7.Size = new Size(85, 50);
             customButton7.TabIndex = 15;
-            customButton7.Text = "customButton7";
             customButton7.TextColor = Color.White;
             customButton7.UseVisualStyleBackColor = false;
             // 
