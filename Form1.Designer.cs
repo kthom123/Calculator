@@ -679,6 +679,7 @@
             BtnEquals.Text = "=";
             BtnEquals.TextColor = Color.White;
             BtnEquals.UseVisualStyleBackColor = false;
+            BtnEquals.Click += BtnEquals_Click;
             // 
             // TxtDisplay2
             // 

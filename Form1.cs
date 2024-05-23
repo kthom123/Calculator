@@ -18,7 +18,7 @@ namespace Calculator
             if (TxtDisplay1.Text == "0" || enterValue) TxtDisplay1.Text = string.Empty;
 
             enterValue = false;
-            CustomButton button = (CustomButton) sender;
+            CustomButton button = (CustomButton)sender;
             if (button.Text == ".")
             {
                 if (!TxtDisplay1.Text.Contains("."))
@@ -32,13 +32,41 @@ namespace Calculator
             if (result != 0) BtnEquals.PerformClick();
             else result = Double.Parse(TxtDisplay1.Text);
 
-            CustomButton button = (CustomButton) sender;
+            CustomButton button = (CustomButton)sender;
             operation = button.Text;
             enterValue = true;
             if (TxtDisplay1.Text != "0")
             {
                 TxtDisplay2.Text = fstNum = $"{result} {operation}";
                 TxtDisplay1.Text = string.Empty;
+            }
+        }
+
+        private void BtnEquals_Click(object sender, EventArgs e)
+        {
+            secNum = TxtDisplay1.Text;
+            TxtDisplay2.Text = $"{TxtDisplay2.Text} {TxtDisplay1.Text} =";
+            if (TxtDisplay1.Text != string.Empty)
+            {
+                if (TxtDisplay1.Text == "0") TxtDisplay2.Text = string.Empty;
+                switch (operation)
+                {
+                    case "+":
+                        TxtDisplay1.Text = (result + Double.Parse(TxtDisplay1.Text)).ToString();
+                        break;
+                    case "-":
+                        TxtDisplay1.Text = (result - Double.Parse(TxtDisplay1.Text)).ToString();
+                        break;
+                    case "×":
+                        TxtDisplay1.Text = (result * Double.Parse(TxtDisplay1.Text)).ToString();
+                        break;
+                    case "÷":
+                        TxtDisplay1.Text = (result / Double.Parse(TxtDisplay1.Text)).ToString();
+                        break;
+                    default:
+                        TxtDisplay2.Text = $"{TxtDisplay1.Text} = ";
+                        break;
+                }
             }
         }
     }
