@@ -18,6 +18,13 @@ namespace Calculator
             if (TxtDisplay1.Text == "0" || enterValue) TxtDisplay1.Text = string.Empty;
 
             enterValue = false;
+            CustomButton button = new CustomButton();
+            if (button.Text == ".")
+            {
+                if (TxtDisplay1.Text.Contains("."))
+                    TxtDisplay1.Text = TxtDisplay1.Text + button.Text;
+            }
+            else TxtDisplay1.Text = TxtDisplay1.Text + button.Text;
         }
     }
 }
