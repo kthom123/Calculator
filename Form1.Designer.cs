@@ -379,6 +379,7 @@
             Btn7.Text = "7";
             Btn7.TextColor = Color.White;
             Btn7.UseVisualStyleBackColor = false;
+            Btn7.Click += BtnNum_Click;
             // 
             // Btn8
             // 
@@ -398,6 +399,7 @@
             Btn8.Text = "8";
             Btn8.TextColor = Color.White;
             Btn8.UseVisualStyleBackColor = false;
+            Btn8.Click += BtnNum_Click;
             // 
             // Btn9
             // 
@@ -417,6 +419,7 @@
             Btn9.Text = "9";
             Btn9.TextColor = Color.White;
             Btn9.UseVisualStyleBackColor = false;
+            Btn9.Click += BtnNum_Click;
             // 
             // BtnMultiply
             // 
@@ -455,6 +458,7 @@
             Btn4.Text = "4";
             Btn4.TextColor = Color.White;
             Btn4.UseVisualStyleBackColor = false;
+            Btn4.Click += BtnNum_Click;
             // 
             // Btn5
             // 
@@ -474,6 +478,7 @@
             Btn5.Text = "5";
             Btn5.TextColor = Color.White;
             Btn5.UseVisualStyleBackColor = false;
+            Btn5.Click += BtnNum_Click;
             // 
             // Btn6
             // 
@@ -493,6 +498,7 @@
             Btn6.Text = "6";
             Btn6.TextColor = Color.White;
             Btn6.UseVisualStyleBackColor = false;
+            Btn6.Click += BtnNum_Click;
             // 
             // BtnMinus
             // 
@@ -531,6 +537,7 @@
             Btn1.Text = "1";
             Btn1.TextColor = Color.White;
             Btn1.UseVisualStyleBackColor = false;
+            Btn1.Click += BtnNum_Click;
             // 
             // Btn2
             // 
@@ -550,6 +557,7 @@
             Btn2.Text = "2";
             Btn2.TextColor = Color.White;
             Btn2.UseVisualStyleBackColor = false;
+            Btn2.Click += BtnNum_Click;
             // 
             // Btn3
             // 
@@ -569,6 +577,7 @@
             Btn3.Text = "3";
             Btn3.TextColor = Color.White;
             Btn3.UseVisualStyleBackColor = false;
+            Btn3.Click += BtnNum_Click;
             // 
             // BtnPlus
             // 
@@ -626,6 +635,7 @@
             Btn0.Text = "0";
             Btn0.TextColor = Color.White;
             Btn0.UseVisualStyleBackColor = false;
+            Btn0.Click += BtnNum_Click;
             // 
             // BtnDecimal
             // 
@@ -645,6 +655,7 @@
             BtnDecimal.Text = ".";
             BtnDecimal.TextColor = Color.White;
             BtnDecimal.UseVisualStyleBackColor = false;
+            BtnDecimal.Click += BtnNum_Click;
             // 
             // BtnEquals
             // 
