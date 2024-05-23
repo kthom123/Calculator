@@ -36,6 +36,7 @@
             customButton4 = new CustomButton();
             customButton5 = new CustomButton();
             customButton6 = new CustomButton();
+            customButton7 = new CustomButton();
             SuspendLayout();
             // 
             // TxtDisplay2
@@ -74,7 +75,7 @@
             // 
             customButton1.BackColor = Color.FromArgb(32, 32, 32);
             customButton1.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton1.BorderColor = Color.Silver;
+            customButton1.BorderColor = Color.FromArgb(32, 32, 32);
             customButton1.BorderRadius = 0;
             customButton1.BorderSize = 0;
             customButton1.FlatAppearance.BorderSize = 0;
@@ -93,7 +94,7 @@
             // 
             customButton2.BackColor = Color.FromArgb(32, 32, 32);
             customButton2.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton2.BorderColor = Color.Silver;
+            customButton2.BorderColor = Color.FromArgb(32, 32, 32);
             customButton2.BorderRadius = 0;
             customButton2.BorderSize = 0;
             customButton2.FlatAppearance.BorderSize = 0;
@@ -112,7 +113,7 @@
             // 
             customButton3.BackColor = Color.FromArgb(32, 32, 32);
             customButton3.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton3.BorderColor = Color.Silver;
+            customButton3.BorderColor = Color.FromArgb(32, 32, 32);
             customButton3.BorderRadius = 0;
             customButton3.BorderSize = 0;
             customButton3.FlatAppearance.BorderSize = 0;
@@ -131,7 +132,7 @@
             // 
             customButton4.BackColor = Color.FromArgb(32, 32, 32);
             customButton4.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton4.BorderColor = Color.Silver;
+            customButton4.BorderColor = Color.FromArgb(32, 32, 32);
             customButton4.BorderRadius = 0;
             customButton4.BorderSize = 0;
             customButton4.FlatAppearance.BorderSize = 0;
@@ -150,7 +151,7 @@
             // 
             customButton5.BackColor = Color.FromArgb(32, 32, 32);
             customButton5.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton5.BorderColor = Color.Silver;
+            customButton5.BorderColor = Color.FromArgb(32, 32, 32);
             customButton5.BorderRadius = 0;
             customButton5.BorderSize = 0;
             customButton5.FlatAppearance.BorderSize = 0;
@@ -169,7 +170,7 @@
             // 
             customButton6.BackColor = Color.FromArgb(32, 32, 32);
             customButton6.BackgroundColor = Color.FromArgb(32, 32, 32);
-            customButton6.BorderColor = Color.Silver;
+            customButton6.BorderColor = Color.FromArgb(32, 32, 32);
             customButton6.BorderRadius = 0;
             customButton6.BorderSize = 0;
             customButton6.FlatAppearance.BorderSize = 0;
@@ -184,11 +185,30 @@
             customButton6.TextColor = Color.White;
             customButton6.UseVisualStyleBackColor = false;
             // 
+            // customButton7
+            // 
+            customButton7.BackColor = Color.FromArgb(32, 32, 32);
+            customButton7.BackgroundColor = Color.FromArgb(32, 32, 32);
+            customButton7.BorderColor = Color.FromArgb(32, 32, 32);
+            customButton7.BorderRadius = 0;
+            customButton7.BorderSize = 0;
+            customButton7.FlatAppearance.BorderSize = 0;
+            customButton7.FlatStyle = FlatStyle.Flat;
+            customButton7.ForeColor = Color.White;
+            customButton7.Location = new Point(99, 276);
+            customButton7.Name = "customButton7";
+            customButton7.Size = new Size(188, 50);
+            customButton7.TabIndex = 15;
+            customButton7.Text = "customButton7";
+            customButton7.TextColor = Color.White;
+            customButton7.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
             ClientSize = new Size(350, 570);
+            Controls.Add(customButton7);
             Controls.Add(customButton6);
             Controls.Add(customButton5);
             Controls.Add(customButton4);
@@ -217,5 +237,6 @@
         private CustomButton customButton4;
         private CustomButton customButton5;
         private CustomButton customButton6;
+        private CustomButton customButton7;
     }
 }
