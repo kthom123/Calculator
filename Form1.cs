@@ -83,13 +83,14 @@
         private void BtnC_Click(object sender, EventArgs e)
         {
             TxtDisplay1.Text = "0";
-            TxtDisplay2.Text = string.Empty;
-            result = 0;
         }
 
-        private void BtnCE_Click(object sender, EventArgs e)
+        private void BtnAC_Click(object sender, EventArgs e)
         {
             TxtDisplay1.Text = "0";
+            result = 0;
+            operation = string.Empty;
+            TxtDisplay2.Text = string.Empty;
         }
 
         private void BtnOperations_Click(object sender, EventArgs e)

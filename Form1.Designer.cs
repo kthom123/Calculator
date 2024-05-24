@@ -39,7 +39,7 @@
             customButton6 = new CustomButton();
             BtnDelete = new CustomButton();
             BtnC = new CustomButton();
-            BtnCE = new CustomButton();
+            BtnAC = new CustomButton();
             BtnPercent = new CustomButton();
             Btn1X = new CustomButton();
             BtnX2 = new CustomButton();
@@ -249,25 +249,25 @@
             BtnC.UseVisualStyleBackColor = false;
             BtnC.Click += BtnC_Click;
             // 
-            // BtnCE
+            // BtnAC
             // 
-            BtnCE.BackColor = Color.FromArgb(50, 50, 50);
-            BtnCE.BackgroundColor = Color.FromArgb(50, 50, 50);
-            BtnCE.BorderColor = Color.FromArgb(32, 32, 32);
-            BtnCE.BorderRadius = 10;
-            BtnCE.BorderSize = 0;
-            BtnCE.FlatAppearance.BorderSize = 0;
-            BtnCE.FlatStyle = FlatStyle.Flat;
-            BtnCE.ForeColor = Color.White;
-            BtnCE.Location = new Point(99, 215);
-            BtnCE.Margin = new Padding(0);
-            BtnCE.Name = "BtnCE";
-            BtnCE.Size = new Size(85, 50);
-            BtnCE.TabIndex = 17;
-            BtnCE.Text = "CE";
-            BtnCE.TextColor = Color.White;
-            BtnCE.UseVisualStyleBackColor = false;
-            BtnCE.Click += BtnCE_Click;
+            BtnAC.BackColor = Color.FromArgb(50, 50, 50);
+            BtnAC.BackgroundColor = Color.FromArgb(50, 50, 50);
+            BtnAC.BorderColor = Color.FromArgb(32, 32, 32);
+            BtnAC.BorderRadius = 10;
+            BtnAC.BorderSize = 0;
+            BtnAC.FlatAppearance.BorderSize = 0;
+            BtnAC.FlatStyle = FlatStyle.Flat;
+            BtnAC.ForeColor = Color.White;
+            BtnAC.Location = new Point(99, 215);
+            BtnAC.Margin = new Padding(0);
+            BtnAC.Name = "BtnAC";
+            BtnAC.Size = new Size(85, 50);
+            BtnAC.TabIndex = 17;
+            BtnAC.Text = "AC";
+            BtnAC.TextColor = Color.White;
+            BtnAC.UseVisualStyleBackColor = false;
+            BtnAC.Click += BtnAC_Click;
             // 
             // BtnPercent
             // 
@@ -743,7 +743,7 @@
             Controls.Add(BtnSquare);
             Controls.Add(BtnDivide);
             Controls.Add(BtnPercent);
-            Controls.Add(BtnCE);
+            Controls.Add(BtnAC);
             Controls.Add(BtnC);
             Controls.Add(BtnDelete);
             Controls.Add(customButton6);
@@ -776,7 +776,7 @@
         private CustomButton customButton6;
         private CustomButton BtnDelete;
         private CustomButton BtnC;
-        private CustomButton BtnCE;
+        private CustomButton BtnAC;
         private CustomButton BtnPercent;
         private CustomButton Btn1X;
         private CustomButton BtnX2;
