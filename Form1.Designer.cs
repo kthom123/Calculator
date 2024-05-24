@@ -69,15 +69,15 @@
             Title.BackColor = Color.FromArgb(32, 32, 32);
             Title.BorderStyle = BorderStyle.None;
             Title.Dock = DockStyle.Top;
-            Title.Font = new Font("Gadugi", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Title.Font = new Font("Gadugi", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Title.ForeColor = Color.DarkGray;
             Title.Location = new Point(0, 0);
             Title.Margin = new Padding(0);
             Title.Multiline = true;
             Title.Name = "Title";
-            Title.Size = new Size(350, 30);
+            Title.Size = new Size(370, 30);
             Title.TabIndex = 0;
-            Title.Text = "Calculator";
+            Title.Text = "🖩 Calculator";
             // 
             // TxtDisplay1
             // 
@@ -90,7 +90,7 @@
             TxtDisplay1.Margin = new Padding(0);
             TxtDisplay1.Multiline = true;
             TxtDisplay1.Name = "TxtDisplay1";
-            TxtDisplay1.Size = new Size(350, 74);
+            TxtDisplay1.Size = new Size(370, 74);
             TxtDisplay1.TabIndex = 1;
             TxtDisplay1.Text = "0";
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
@@ -105,7 +105,7 @@
             customButton1.FlatAppearance.BorderSize = 0;
             customButton1.FlatStyle = FlatStyle.Flat;
             customButton1.ForeColor = Color.White;
-            customButton1.Location = new Point(294, 162);
+            customButton1.Location = new Point(304, 161);
             customButton1.Margin = new Padding(0);
             customButton1.Name = "customButton1";
             customButton1.Size = new Size(50, 30);
@@ -124,7 +124,7 @@
             customButton2.FlatAppearance.BorderSize = 0;
             customButton2.FlatStyle = FlatStyle.Flat;
             customButton2.ForeColor = Color.White;
-            customButton2.Location = new Point(236, 162);
+            customButton2.Location = new Point(246, 161);
             customButton2.Margin = new Padding(0);
             customButton2.Name = "customButton2";
             customButton2.Size = new Size(50, 30);
@@ -143,7 +143,7 @@
             customButton3.FlatAppearance.BorderSize = 0;
             customButton3.FlatStyle = FlatStyle.Flat;
             customButton3.ForeColor = Color.White;
-            customButton3.Location = new Point(178, 162);
+            customButton3.Location = new Point(188, 161);
             customButton3.Margin = new Padding(0);
             customButton3.Name = "customButton3";
             customButton3.Size = new Size(50, 30);
@@ -162,7 +162,7 @@
             customButton4.FlatAppearance.BorderSize = 0;
             customButton4.FlatStyle = FlatStyle.Flat;
             customButton4.ForeColor = Color.White;
-            customButton4.Location = new Point(120, 162);
+            customButton4.Location = new Point(130, 161);
             customButton4.Margin = new Padding(0);
             customButton4.Name = "customButton4";
             customButton4.Size = new Size(50, 30);
@@ -181,7 +181,7 @@
             customButton5.FlatAppearance.BorderSize = 0;
             customButton5.FlatStyle = FlatStyle.Flat;
             customButton5.ForeColor = Color.White;
-            customButton5.Location = new Point(62, 162);
+            customButton5.Location = new Point(72, 161);
             customButton5.Margin = new Padding(0);
             customButton5.Name = "customButton5";
             customButton5.Size = new Size(50, 30);
@@ -200,7 +200,7 @@
             customButton6.FlatAppearance.BorderSize = 0;
             customButton6.FlatStyle = FlatStyle.Flat;
             customButton6.ForeColor = Color.White;
-            customButton6.Location = new Point(4, 162);
+            customButton6.Location = new Point(14, 161);
             customButton6.Margin = new Padding(0);
             customButton6.Name = "customButton6";
             customButton6.Size = new Size(50, 30);
@@ -220,7 +220,7 @@
             BtnDelete.FlatStyle = FlatStyle.Flat;
             BtnDelete.ForeColor = Color.White;
             BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
-            BtnDelete.Location = new Point(265, 216);
+            BtnDelete.Location = new Point(275, 215);
             BtnDelete.Margin = new Padding(0);
             BtnDelete.Name = "BtnDelete";
             BtnDelete.Size = new Size(85, 50);
@@ -239,7 +239,7 @@
             BtnC.FlatAppearance.BorderSize = 0;
             BtnC.FlatStyle = FlatStyle.Flat;
             BtnC.ForeColor = Color.White;
-            BtnC.Location = new Point(177, 216);
+            BtnC.Location = new Point(187, 215);
             BtnC.Margin = new Padding(0);
             BtnC.Name = "BtnC";
             BtnC.Size = new Size(85, 50);
@@ -259,7 +259,7 @@
             BtnCE.FlatAppearance.BorderSize = 0;
             BtnCE.FlatStyle = FlatStyle.Flat;
             BtnCE.ForeColor = Color.White;
-            BtnCE.Location = new Point(89, 216);
+            BtnCE.Location = new Point(99, 215);
             BtnCE.Margin = new Padding(0);
             BtnCE.Name = "BtnCE";
             BtnCE.Size = new Size(85, 50);
@@ -279,7 +279,7 @@
             BtnPercent.FlatAppearance.BorderSize = 0;
             BtnPercent.FlatStyle = FlatStyle.Flat;
             BtnPercent.ForeColor = Color.White;
-            BtnPercent.Location = new Point(1, 216);
+            BtnPercent.Location = new Point(11, 215);
             BtnPercent.Margin = new Padding(0);
             BtnPercent.Name = "BtnPercent";
             BtnPercent.Size = new Size(85, 50);
@@ -299,7 +299,7 @@
             Btn1X.FlatAppearance.BorderSize = 0;
             Btn1X.FlatStyle = FlatStyle.Flat;
             Btn1X.ForeColor = Color.White;
-            Btn1X.Location = new Point(1, 275);
+            Btn1X.Location = new Point(11, 274);
             Btn1X.Margin = new Padding(0);
             Btn1X.Name = "Btn1X";
             Btn1X.Size = new Size(85, 50);
@@ -319,7 +319,7 @@
             BtnX2.FlatAppearance.BorderSize = 0;
             BtnX2.FlatStyle = FlatStyle.Flat;
             BtnX2.ForeColor = Color.White;
-            BtnX2.Location = new Point(89, 275);
+            BtnX2.Location = new Point(99, 274);
             BtnX2.Margin = new Padding(0);
             BtnX2.Name = "BtnX2";
             BtnX2.Size = new Size(85, 50);
@@ -339,7 +339,7 @@
             BtnSquare.FlatAppearance.BorderSize = 0;
             BtnSquare.FlatStyle = FlatStyle.Flat;
             BtnSquare.ForeColor = Color.White;
-            BtnSquare.Location = new Point(177, 275);
+            BtnSquare.Location = new Point(187, 274);
             BtnSquare.Margin = new Padding(0);
             BtnSquare.Name = "BtnSquare";
             BtnSquare.Size = new Size(85, 50);
@@ -359,7 +359,7 @@
             BtnDivide.FlatAppearance.BorderSize = 0;
             BtnDivide.FlatStyle = FlatStyle.Flat;
             BtnDivide.ForeColor = Color.White;
-            BtnDivide.Location = new Point(265, 275);
+            BtnDivide.Location = new Point(275, 274);
             BtnDivide.Margin = new Padding(0);
             BtnDivide.Name = "BtnDivide";
             BtnDivide.Size = new Size(85, 50);
@@ -380,7 +380,7 @@
             Btn7.FlatStyle = FlatStyle.Flat;
             Btn7.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn7.ForeColor = Color.White;
-            Btn7.Location = new Point(1, 334);
+            Btn7.Location = new Point(11, 333);
             Btn7.Margin = new Padding(0);
             Btn7.Name = "Btn7";
             Btn7.Size = new Size(85, 50);
@@ -401,7 +401,7 @@
             Btn8.FlatStyle = FlatStyle.Flat;
             Btn8.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn8.ForeColor = Color.White;
-            Btn8.Location = new Point(89, 334);
+            Btn8.Location = new Point(99, 333);
             Btn8.Margin = new Padding(0);
             Btn8.Name = "Btn8";
             Btn8.Size = new Size(85, 50);
@@ -422,7 +422,7 @@
             Btn9.FlatStyle = FlatStyle.Flat;
             Btn9.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn9.ForeColor = Color.White;
-            Btn9.Location = new Point(177, 334);
+            Btn9.Location = new Point(187, 333);
             Btn9.Margin = new Padding(0);
             Btn9.Name = "Btn9";
             Btn9.Size = new Size(85, 50);
@@ -442,7 +442,7 @@
             BtnMultiply.FlatAppearance.BorderSize = 0;
             BtnMultiply.FlatStyle = FlatStyle.Flat;
             BtnMultiply.ForeColor = Color.White;
-            BtnMultiply.Location = new Point(266, 334);
+            BtnMultiply.Location = new Point(276, 333);
             BtnMultiply.Margin = new Padding(0);
             BtnMultiply.Name = "BtnMultiply";
             BtnMultiply.Size = new Size(85, 50);
@@ -463,7 +463,7 @@
             Btn4.FlatStyle = FlatStyle.Flat;
             Btn4.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn4.ForeColor = Color.White;
-            Btn4.Location = new Point(1, 393);
+            Btn4.Location = new Point(11, 392);
             Btn4.Margin = new Padding(0);
             Btn4.Name = "Btn4";
             Btn4.Size = new Size(85, 50);
@@ -484,7 +484,7 @@
             Btn5.FlatStyle = FlatStyle.Flat;
             Btn5.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn5.ForeColor = Color.White;
-            Btn5.Location = new Point(89, 393);
+            Btn5.Location = new Point(99, 392);
             Btn5.Margin = new Padding(0);
             Btn5.Name = "Btn5";
             Btn5.Size = new Size(85, 50);
@@ -505,7 +505,7 @@
             Btn6.FlatStyle = FlatStyle.Flat;
             Btn6.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn6.ForeColor = Color.White;
-            Btn6.Location = new Point(177, 393);
+            Btn6.Location = new Point(187, 392);
             Btn6.Margin = new Padding(0);
             Btn6.Name = "Btn6";
             Btn6.Size = new Size(85, 50);
@@ -525,7 +525,7 @@
             BtnMinus.FlatAppearance.BorderSize = 0;
             BtnMinus.FlatStyle = FlatStyle.Flat;
             BtnMinus.ForeColor = Color.White;
-            BtnMinus.Location = new Point(265, 393);
+            BtnMinus.Location = new Point(275, 392);
             BtnMinus.Margin = new Padding(0);
             BtnMinus.Name = "BtnMinus";
             BtnMinus.Size = new Size(85, 50);
@@ -546,7 +546,7 @@
             Btn1.FlatStyle = FlatStyle.Flat;
             Btn1.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn1.ForeColor = Color.White;
-            Btn1.Location = new Point(1, 452);
+            Btn1.Location = new Point(11, 451);
             Btn1.Margin = new Padding(0);
             Btn1.Name = "Btn1";
             Btn1.Size = new Size(85, 50);
@@ -567,7 +567,7 @@
             Btn2.FlatStyle = FlatStyle.Flat;
             Btn2.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn2.ForeColor = Color.White;
-            Btn2.Location = new Point(89, 452);
+            Btn2.Location = new Point(99, 451);
             Btn2.Margin = new Padding(0);
             Btn2.Name = "Btn2";
             Btn2.Size = new Size(85, 50);
@@ -588,7 +588,7 @@
             Btn3.FlatStyle = FlatStyle.Flat;
             Btn3.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn3.ForeColor = Color.White;
-            Btn3.Location = new Point(177, 452);
+            Btn3.Location = new Point(187, 451);
             Btn3.Margin = new Padding(0);
             Btn3.Name = "Btn3";
             Btn3.Size = new Size(85, 50);
@@ -608,7 +608,7 @@
             BtnPlus.FlatAppearance.BorderSize = 0;
             BtnPlus.FlatStyle = FlatStyle.Flat;
             BtnPlus.ForeColor = Color.White;
-            BtnPlus.Location = new Point(265, 452);
+            BtnPlus.Location = new Point(275, 451);
             BtnPlus.Margin = new Padding(0);
             BtnPlus.Name = "BtnPlus";
             BtnPlus.Size = new Size(85, 50);
@@ -629,7 +629,7 @@
             BtnPM.FlatStyle = FlatStyle.Flat;
             BtnPM.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             BtnPM.ForeColor = Color.White;
-            BtnPM.Location = new Point(1, 511);
+            BtnPM.Location = new Point(11, 510);
             BtnPM.Margin = new Padding(0);
             BtnPM.Name = "BtnPM";
             BtnPM.Size = new Size(85, 50);
@@ -650,7 +650,7 @@
             Btn0.FlatStyle = FlatStyle.Flat;
             Btn0.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn0.ForeColor = Color.White;
-            Btn0.Location = new Point(89, 511);
+            Btn0.Location = new Point(99, 510);
             Btn0.Margin = new Padding(0);
             Btn0.Name = "Btn0";
             Btn0.Size = new Size(85, 50);
@@ -671,7 +671,7 @@
             BtnDecimal.FlatStyle = FlatStyle.Flat;
             BtnDecimal.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             BtnDecimal.ForeColor = Color.White;
-            BtnDecimal.Location = new Point(177, 511);
+            BtnDecimal.Location = new Point(187, 510);
             BtnDecimal.Margin = new Padding(0);
             BtnDecimal.Name = "BtnDecimal";
             BtnDecimal.Size = new Size(85, 50);
@@ -691,7 +691,7 @@
             BtnEquals.FlatAppearance.BorderSize = 0;
             BtnEquals.FlatStyle = FlatStyle.Flat;
             BtnEquals.ForeColor = Color.White;
-            BtnEquals.Location = new Point(265, 511);
+            BtnEquals.Location = new Point(275, 510);
             BtnEquals.Margin = new Padding(0);
             BtnEquals.Name = "BtnEquals";
             BtnEquals.Size = new Size(85, 50);
@@ -712,7 +712,7 @@
             TxtDisplay2.Margin = new Padding(0);
             TxtDisplay2.Multiline = true;
             TxtDisplay2.Name = "TxtDisplay2";
-            TxtDisplay2.Size = new Size(350, 30);
+            TxtDisplay2.Size = new Size(370, 30);
             TxtDisplay2.TabIndex = 39;
             TxtDisplay2.TextAlign = HorizontalAlignment.Right;
             // 
@@ -720,7 +720,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(32, 32, 32);
-            ClientSize = new Size(350, 570);
+            ClientSize = new Size(370, 570);
             Controls.Add(TxtDisplay2);
             Controls.Add(BtnPM);
             Controls.Add(Btn0);
