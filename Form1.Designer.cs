@@ -287,6 +287,7 @@
             BtnPercent.Text = "%";
             BtnPercent.TextColor = Color.White;
             BtnPercent.UseVisualStyleBackColor = false;
+            BtnPercent.Click += BtnOperations_Click;
             // 
             // Btn1X
             // 
@@ -306,6 +307,7 @@
             Btn1X.Text = "¹⁄ₓ";
             Btn1X.TextColor = Color.White;
             Btn1X.UseVisualStyleBackColor = false;
+            Btn1X.Click += BtnOperations_Click;
             // 
             // BtnX2
             // 
@@ -325,6 +327,7 @@
             BtnX2.Text = "x²";
             BtnX2.TextColor = Color.White;
             BtnX2.UseVisualStyleBackColor = false;
+            BtnX2.Click += BtnOperations_Click;
             // 
             // BtnSquare
             // 
@@ -344,6 +347,7 @@
             BtnSquare.Text = "√x";
             BtnSquare.TextColor = Color.White;
             BtnSquare.UseVisualStyleBackColor = false;
+            BtnSquare.Click += BtnOperations_Click;
             // 
             // BtnDivide
             // 
@@ -623,6 +627,7 @@
             BtnPM.Text = "±";
             BtnPM.TextColor = Color.White;
             BtnPM.UseVisualStyleBackColor = false;
+            BtnPM.Click += BtnOperations_Click;
             // 
             // Btn0
             // 

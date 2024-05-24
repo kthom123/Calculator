@@ -1,4 +1,4 @@
-namespace Calculator
+﻿namespace Calculator
 {
     public partial class Form1 : Form
     {
@@ -57,10 +57,10 @@ namespace Calculator
                     case "-":
                         TxtDisplay1.Text = (result - Double.Parse(TxtDisplay1.Text)).ToString();
                         break;
-                    case "�":
+                    case "×":
                         TxtDisplay1.Text = (result * Double.Parse(TxtDisplay1.Text)).ToString();
                         break;
-                    case "�":
+                    case "÷":
                         TxtDisplay1.Text = (result / Double.Parse(TxtDisplay1.Text)).ToString();
                         break;
                     default:
@@ -90,6 +90,21 @@ namespace Calculator
         private void BtnCE_Click(object sender, EventArgs e)
         {
             TxtDisplay1.Text = "0";
+        }
+
+        private void BtnOperations_Click(object sender, EventArgs e)
+        {
+            CustomButton button = (CustomButton)sender;
+            operation = button.Text;
+            switch (operation)
+            {
+                case "√x":
+                    TxtDisplay2.Text = $"√x({TxtDisplay1.Text})";
+                    TxtDisplay1.Text = Convert.ToString(Math.Sqrt(Double.Parse(TxtDisplay1.Text)));
+                    break;
+                default :
+                    break;
+            }
         }
     }
 }
