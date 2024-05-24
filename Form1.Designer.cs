@@ -211,8 +211,8 @@
             // 
             // BtnDelete
             // 
-            BtnDelete.BackColor = Color.FromArgb(60, 60, 60);
-            BtnDelete.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnDelete.BackColor = Color.FromArgb(50, 50, 50);
+            BtnDelete.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnDelete.BorderColor = Color.FromArgb(32, 32, 32);
             BtnDelete.BorderRadius = 10;
             BtnDelete.BorderSize = 0;
@@ -231,8 +231,8 @@
             // 
             // BtnC
             // 
-            BtnC.BackColor = Color.FromArgb(60, 60, 60);
-            BtnC.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnC.BackColor = Color.FromArgb(50, 50, 50);
+            BtnC.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnC.BorderColor = Color.FromArgb(32, 32, 32);
             BtnC.BorderRadius = 10;
             BtnC.BorderSize = 0;
@@ -251,8 +251,8 @@
             // 
             // BtnCE
             // 
-            BtnCE.BackColor = Color.FromArgb(60, 60, 60);
-            BtnCE.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnCE.BackColor = Color.FromArgb(50, 50, 50);
+            BtnCE.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnCE.BorderColor = Color.FromArgb(32, 32, 32);
             BtnCE.BorderRadius = 10;
             BtnCE.BorderSize = 0;
@@ -271,8 +271,8 @@
             // 
             // BtnPercent
             // 
-            BtnPercent.BackColor = Color.FromArgb(60, 60, 60);
-            BtnPercent.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnPercent.BackColor = Color.FromArgb(50, 50, 50);
+            BtnPercent.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnPercent.BorderColor = Color.FromArgb(32, 32, 32);
             BtnPercent.BorderRadius = 10;
             BtnPercent.BorderSize = 0;
@@ -291,8 +291,8 @@
             // 
             // Btn1X
             // 
-            Btn1X.BackColor = Color.FromArgb(60, 60, 60);
-            Btn1X.BackgroundColor = Color.FromArgb(60, 60, 60);
+            Btn1X.BackColor = Color.FromArgb(50, 50, 50);
+            Btn1X.BackgroundColor = Color.FromArgb(50, 50, 50);
             Btn1X.BorderColor = Color.FromArgb(32, 32, 32);
             Btn1X.BorderRadius = 10;
             Btn1X.BorderSize = 0;
@@ -311,8 +311,8 @@
             // 
             // BtnX2
             // 
-            BtnX2.BackColor = Color.FromArgb(60, 60, 60);
-            BtnX2.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnX2.BackColor = Color.FromArgb(50, 50, 50);
+            BtnX2.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnX2.BorderColor = Color.FromArgb(32, 32, 32);
             BtnX2.BorderRadius = 10;
             BtnX2.BorderSize = 0;
@@ -331,8 +331,8 @@
             // 
             // BtnSquare
             // 
-            BtnSquare.BackColor = Color.FromArgb(60, 60, 60);
-            BtnSquare.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnSquare.BackColor = Color.FromArgb(50, 50, 50);
+            BtnSquare.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnSquare.BorderColor = Color.FromArgb(32, 32, 32);
             BtnSquare.BorderRadius = 10;
             BtnSquare.BorderSize = 0;
@@ -351,8 +351,8 @@
             // 
             // BtnDivide
             // 
-            BtnDivide.BackColor = Color.FromArgb(60, 60, 60);
-            BtnDivide.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnDivide.BackColor = Color.FromArgb(50, 50, 50);
+            BtnDivide.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnDivide.BorderColor = Color.FromArgb(32, 32, 32);
             BtnDivide.BorderRadius = 10;
             BtnDivide.BorderSize = 0;
@@ -378,6 +378,7 @@
             Btn7.BorderSize = 0;
             Btn7.FlatAppearance.BorderSize = 0;
             Btn7.FlatStyle = FlatStyle.Flat;
+            Btn7.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn7.ForeColor = Color.White;
             Btn7.Location = new Point(1, 334);
             Btn7.Margin = new Padding(0);
@@ -398,6 +399,7 @@
             Btn8.BorderSize = 0;
             Btn8.FlatAppearance.BorderSize = 0;
             Btn8.FlatStyle = FlatStyle.Flat;
+            Btn8.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn8.ForeColor = Color.White;
             Btn8.Location = new Point(89, 334);
             Btn8.Margin = new Padding(0);
@@ -418,6 +420,7 @@
             Btn9.BorderSize = 0;
             Btn9.FlatAppearance.BorderSize = 0;
             Btn9.FlatStyle = FlatStyle.Flat;
+            Btn9.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn9.ForeColor = Color.White;
             Btn9.Location = new Point(177, 334);
             Btn9.Margin = new Padding(0);
@@ -431,8 +434,8 @@
             // 
             // BtnMultiply
             // 
-            BtnMultiply.BackColor = Color.FromArgb(60, 60, 60);
-            BtnMultiply.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnMultiply.BackColor = Color.FromArgb(50, 50, 50);
+            BtnMultiply.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnMultiply.BorderColor = Color.FromArgb(32, 32, 32);
             BtnMultiply.BorderRadius = 10;
             BtnMultiply.BorderSize = 0;
@@ -458,6 +461,7 @@
             Btn4.BorderSize = 0;
             Btn4.FlatAppearance.BorderSize = 0;
             Btn4.FlatStyle = FlatStyle.Flat;
+            Btn4.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn4.ForeColor = Color.White;
             Btn4.Location = new Point(1, 393);
             Btn4.Margin = new Padding(0);
@@ -478,6 +482,7 @@
             Btn5.BorderSize = 0;
             Btn5.FlatAppearance.BorderSize = 0;
             Btn5.FlatStyle = FlatStyle.Flat;
+            Btn5.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn5.ForeColor = Color.White;
             Btn5.Location = new Point(89, 393);
             Btn5.Margin = new Padding(0);
@@ -498,6 +503,7 @@
             Btn6.BorderSize = 0;
             Btn6.FlatAppearance.BorderSize = 0;
             Btn6.FlatStyle = FlatStyle.Flat;
+            Btn6.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn6.ForeColor = Color.White;
             Btn6.Location = new Point(177, 393);
             Btn6.Margin = new Padding(0);
@@ -511,8 +517,8 @@
             // 
             // BtnMinus
             // 
-            BtnMinus.BackColor = Color.FromArgb(60, 60, 60);
-            BtnMinus.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnMinus.BackColor = Color.FromArgb(50, 50, 50);
+            BtnMinus.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnMinus.BorderColor = Color.FromArgb(32, 32, 32);
             BtnMinus.BorderRadius = 10;
             BtnMinus.BorderSize = 0;
@@ -538,6 +544,7 @@
             Btn1.BorderSize = 0;
             Btn1.FlatAppearance.BorderSize = 0;
             Btn1.FlatStyle = FlatStyle.Flat;
+            Btn1.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn1.ForeColor = Color.White;
             Btn1.Location = new Point(1, 452);
             Btn1.Margin = new Padding(0);
@@ -558,6 +565,7 @@
             Btn2.BorderSize = 0;
             Btn2.FlatAppearance.BorderSize = 0;
             Btn2.FlatStyle = FlatStyle.Flat;
+            Btn2.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn2.ForeColor = Color.White;
             Btn2.Location = new Point(89, 452);
             Btn2.Margin = new Padding(0);
@@ -578,6 +586,7 @@
             Btn3.BorderSize = 0;
             Btn3.FlatAppearance.BorderSize = 0;
             Btn3.FlatStyle = FlatStyle.Flat;
+            Btn3.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn3.ForeColor = Color.White;
             Btn3.Location = new Point(177, 452);
             Btn3.Margin = new Padding(0);
@@ -591,8 +600,8 @@
             // 
             // BtnPlus
             // 
-            BtnPlus.BackColor = Color.FromArgb(60, 60, 60);
-            BtnPlus.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnPlus.BackColor = Color.FromArgb(50, 50, 50);
+            BtnPlus.BackgroundColor = Color.FromArgb(50, 50, 50);
             BtnPlus.BorderColor = Color.FromArgb(32, 32, 32);
             BtnPlus.BorderRadius = 10;
             BtnPlus.BorderSize = 0;
@@ -618,6 +627,7 @@
             BtnPM.BorderSize = 0;
             BtnPM.FlatAppearance.BorderSize = 0;
             BtnPM.FlatStyle = FlatStyle.Flat;
+            BtnPM.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             BtnPM.ForeColor = Color.White;
             BtnPM.Location = new Point(1, 511);
             BtnPM.Margin = new Padding(0);
@@ -638,6 +648,7 @@
             Btn0.BorderSize = 0;
             Btn0.FlatAppearance.BorderSize = 0;
             Btn0.FlatStyle = FlatStyle.Flat;
+            Btn0.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             Btn0.ForeColor = Color.White;
             Btn0.Location = new Point(89, 511);
             Btn0.Margin = new Padding(0);
@@ -658,6 +669,7 @@
             BtnDecimal.BorderSize = 0;
             BtnDecimal.FlatAppearance.BorderSize = 0;
             BtnDecimal.FlatStyle = FlatStyle.Flat;
+            BtnDecimal.Font = new Font("Gadugi", 12F, FontStyle.Bold);
             BtnDecimal.ForeColor = Color.White;
             BtnDecimal.Location = new Point(177, 511);
             BtnDecimal.Margin = new Padding(0);
@@ -671,8 +683,8 @@
             // 
             // BtnEquals
             // 
-            BtnEquals.BackColor = Color.FromArgb(60, 60, 60);
-            BtnEquals.BackgroundColor = Color.FromArgb(60, 60, 60);
+            BtnEquals.BackColor = SystemColors.Highlight;
+            BtnEquals.BackgroundColor = SystemColors.Highlight;
             BtnEquals.BorderColor = Color.FromArgb(32, 32, 32);
             BtnEquals.BorderRadius = 10;
             BtnEquals.BorderSize = 0;
