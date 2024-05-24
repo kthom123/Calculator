@@ -1,4 +1,7 @@
-﻿namespace Calculator
+﻿using System;
+using System.Windows.Forms;
+
+namespace Calculator
 {
     public partial class Form1 : Form
     {
@@ -11,6 +14,9 @@
         public Form1()
         {
             InitializeComponent();
+            TxtDisplay1.Text = "0";
+            TxtDisplay1.MaxLength = 20;
+            TxtDisplay1.TextAlign = HorizontalAlignment.Right;
         }
 
         private void BtnNum_Click(object sender, EventArgs e)
