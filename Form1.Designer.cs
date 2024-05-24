@@ -227,6 +227,7 @@
             BtnDelete.TabIndex = 15;
             BtnDelete.TextColor = Color.White;
             BtnDelete.UseVisualStyleBackColor = false;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // BtnC
             // 
@@ -246,6 +247,7 @@
             BtnC.Text = "C";
             BtnC.TextColor = Color.White;
             BtnC.UseVisualStyleBackColor = false;
+            BtnC.Click += BtnC_Click;
             // 
             // BtnCE
             // 
@@ -265,6 +267,7 @@
             BtnCE.Text = "CE";
             BtnCE.TextColor = Color.White;
             BtnCE.UseVisualStyleBackColor = false;
+            BtnCE.Click += BtnCE_Click;
             // 
             // BtnPercent
             // 

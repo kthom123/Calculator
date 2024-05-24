@@ -67,7 +67,27 @@ namespace Calculator
                         TxtDisplay2.Text = $"{TxtDisplay1.Text} = ";
                         break;
                 }
+
+                result = Double.Parse(TxtDisplay1.Text);
+                operation = string.Empty;
             }
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (TxtDisplay1.Text.Length > 0)
+                TxtDisplay1.Text = TxtDisplay1.Text.Remove(TxtDisplay1.Text.Length - 1, 1);
+            if (TxtDisplay1.Text == string.Empty) TxtDisplay1.Text = "0";
+        }
+
+        private void BtnC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnCE_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
