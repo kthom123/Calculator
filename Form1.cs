@@ -99,10 +99,23 @@
             switch (operation)
             {
                 case "√x":
-                    TxtDisplay2.Text = $"√x({TxtDisplay1.Text})";
+                    TxtDisplay2.Text = $"√({TxtDisplay1.Text})";
                     TxtDisplay1.Text = Convert.ToString(Math.Sqrt(Double.Parse(TxtDisplay1.Text)));
                     break;
-                default :
+                case "x²":
+                    TxtDisplay2.Text = $"({TxtDisplay1.Text})²";
+                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) * Convert.ToDouble(TxtDisplay1.Text));
+                    break;
+                case "¹⁄ₓ":
+                    TxtDisplay2.Text = $"¹⁄({TxtDisplay1.Text})";
+                    TxtDisplay1.Text = Convert.ToString(1.0 / Convert.ToDouble(TxtDisplay1.Text));
+                    break;
+                case "%":
+                    TxtDisplay2.Text = $"%({TxtDisplay1.Text})";
+                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) / Convert.ToDouble(100));
+                    break;
+                case "±":
+                    TxtDisplay1.Text = Convert.ToString(-1 * Convert.ToDouble(TxtDisplay1.Text));
                     break;
             }
         }
