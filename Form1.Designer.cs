@@ -69,7 +69,7 @@
             Title.BackColor = Color.FromArgb(32, 32, 32);
             Title.BorderStyle = BorderStyle.None;
             Title.Dock = DockStyle.Top;
-            Title.Font = new Font("Gadugi", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Title.Font = new Font("Gadugi", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Title.ForeColor = Color.DarkGray;
             Title.Location = new Point(0, 0);
             Title.Margin = new Padding(0);
@@ -77,7 +77,7 @@
             Title.Name = "Title";
             Title.Size = new Size(370, 30);
             Title.TabIndex = 0;
-            Title.Text = "🖩 Calculator";
+            Title.Text = " 🖩 ";
             // 
             // TxtDisplay1
             // 
