@@ -82,12 +82,14 @@ namespace Calculator
 
         private void BtnC_Click(object sender, EventArgs e)
         {
-
+            TxtDisplay1.Text = "0";
+            TxtDisplay2.Text = string.Empty;
+            result = 0;
         }
 
         private void BtnCE_Click(object sender, EventArgs e)
         {
-
+            TxtDisplay1.Text = "0";
         }
     }
 }
