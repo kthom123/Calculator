@@ -7,10 +7,11 @@ namespace Calculator
     public partial class Form1 : Form
     {
         // Fields
-        double result = 0;
+        decimal result = 0;
         string operation = string.Empty;
         bool enterValue = false;
         bool isResultDisplayed = false;
+        decimal firstInput = 0; // Variable to store the first input
 
         public Form1()
         {
@@ -58,39 +59,47 @@ namespace Calculator
             }
             else
             {
-                result = double.Parse(TxtDisplay1.Text);
+                result = decimal.Parse(TxtDisplay1.Text);
             }
 
             CustomButton button = (CustomButton)sender;
             operation = button.Text;
             enterValue = true;
+
+            // Update TxtDisplay2 to show the current operation
             TxtDisplay2.Text = $"{result} {operation}";
+
+            // Check if the number is too long and format it accordingly
+            if (TxtDisplay1.Text.Length > 18)
+            {
+                TxtDisplay1.Text = "0"; // Reset TxtDisplay1 to "0"
+            }
         }
 
         private void BtnEquals_Click(object sender, EventArgs e)
         {
-            if (operation == string.Empty)
+            if (operation == string.Empty || TxtDisplay1.Text == string.Empty)
                 return;
 
-            double secondNum = double.Parse(TxtDisplay1.Text);
+            decimal secondNum = decimal.Parse(TxtDisplay1.Text);
 
             switch (operation)
             {
                 case "+":
-                    TxtDisplay1.Text = (result + secondNum).ToString();
+                    TxtDisplay1.Text = (result + secondNum).ToString("0.#############################");
                     break;
                 case "-":
-                    TxtDisplay1.Text = (result - secondNum).ToString();
+                    TxtDisplay1.Text = (result - secondNum).ToString("0.#############################");
                     break;
                 case "×":
-                    TxtDisplay1.Text = (result * secondNum).ToString();
+                    TxtDisplay1.Text = (result * secondNum).ToString("0.#############################");
                     break;
                 case "÷":
-                    TxtDisplay1.Text = (result / secondNum).ToString("0.####################");
+                    TxtDisplay1.Text = (result / secondNum).ToString("0.#############################");
                     break;
             }
 
-            result = double.Parse(TxtDisplay1.Text);
+            result = decimal.Parse(TxtDisplay1.Text);
             TxtDisplay2.Text = string.Empty;
             operation = string.Empty;
             enterValue = false;
@@ -132,22 +141,22 @@ namespace Calculator
             {
                 case "√x":
                     TxtDisplay2.Text = $"√({TxtDisplay1.Text})";
-                    TxtDisplay1.Text = Convert.ToString(Math.Sqrt(double.Parse(TxtDisplay1.Text)));
+                    TxtDisplay1.Text = Math.Sqrt((double)decimal.Parse(TxtDisplay1.Text)).ToString("0.#############################");
                     break;
                 case "x²":
                     TxtDisplay2.Text = $"({TxtDisplay1.Text})²";
-                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) * Convert.ToDouble(TxtDisplay1.Text));
+                    TxtDisplay1.Text = (decimal.Parse(TxtDisplay1.Text) * decimal.Parse(TxtDisplay1.Text)).ToString("0.#############################");
                     break;
                 case "¹⁄ₓ":
                     TxtDisplay2.Text = $"¹⁄({TxtDisplay1.Text})";
-                    TxtDisplay1.Text = Convert.ToString(1.0 / Convert.ToDouble(TxtDisplay1.Text));
+                    TxtDisplay1.Text = (1 / decimal.Parse(TxtDisplay1.Text)).ToString("0.#############################");
                     break;
                 case "%":
                     TxtDisplay2.Text = $"%({TxtDisplay1.Text})";
-                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) / 100);
+                    TxtDisplay1.Text = (decimal.Parse(TxtDisplay1.Text) / 100).ToString("0.#############################");
                     break;
                 case "±":
-                    TxtDisplay1.Text = Convert.ToString(-1 * Convert.ToDouble(TxtDisplay1.Text));
+                    TxtDisplay1.Text = (-decimal.Parse(TxtDisplay1.Text)).ToString("0.#############################");
                     break;
             }
         }
