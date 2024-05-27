@@ -11,13 +11,19 @@ namespace Calculator
         string operation = string.Empty;
         bool enterValue = false;
         bool isResultDisplayed = false;
-        decimal firstInput = 0; // Variable to store the first input
+        const int MaxDisplayLength = 20;
 
         public Form1()
         {
             InitializeComponent();
+            InitializeDisplay();
+        }
+
+        // Initializes the display properties
+        private void InitializeDisplay()
+        {
             TxtDisplay1.Text = "0";
-            TxtDisplay1.MaxLength = 20;
+            TxtDisplay1.MaxLength = MaxDisplayLength;
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
             TxtDisplay1.Font = new Font("Gadugi", 34, FontStyle.Bold);
             TxtDisplay1.WordWrap = false;
@@ -25,9 +31,10 @@ namespace Calculator
             TxtDisplay1.TextChanged += TxtDisplay1_TextChanged;
         }
 
+        // Handles number button click
         private void BtnNum_Click(object sender, EventArgs e)
         {
-            if (TxtDisplay1.Text.Length >= 20)
+            if (TxtDisplay1.Text.Length >= MaxDisplayLength)
                 return;
 
             if (TxtDisplay1.Text == "0" || enterValue)
@@ -50,6 +57,7 @@ namespace Calculator
             isResultDisplayed = false;
         }
 
+        // Handles math operation button click
         private void BtnMathOperation_Click(object sender, EventArgs e)
         {
             if (result != 0 && !enterValue)
@@ -70,12 +78,13 @@ namespace Calculator
             TxtDisplay2.Text = $"{result} {operation}";
 
             // Check if the number is too long and format it accordingly
-            if (TxtDisplay1.Text.Length > 18)
+            if (TxtDisplay1.Text.Length > MaxDisplayLength - 2)
             {
                 TxtDisplay1.Text = "0"; // Reset TxtDisplay1 to "0"
             }
         }
 
+        // Handles equals button click
         private void BtnEquals_Click(object sender, EventArgs e)
         {
             if (operation == string.Empty || TxtDisplay1.Text == string.Empty)
@@ -106,6 +115,7 @@ namespace Calculator
             isResultDisplayed = true;
         }
 
+        // Handles C button click
         private void BtnC_Click(object sender, EventArgs e)
         {
             if (TxtDisplay1.Text.Length > 1)
@@ -119,6 +129,7 @@ namespace Calculator
             ResetFontSize(); // Reset font size after clearing
         }
 
+        // Handles AC button click
         private void BtnAC_Click(object sender, EventArgs e)
         {
             TxtDisplay1.Text = "0";
@@ -128,11 +139,13 @@ namespace Calculator
             ResetFontSize(); // Reset font size after clearing
         }
 
+        // Resets font size
         private void ResetFontSize()
         {
             TxtDisplay1.Font = new Font("Gadugi", 34, FontStyle.Bold); // Reset font size to initial size
         }
 
+        // Handles other operation buttons click
         private void BtnOperations_Click(object sender, EventArgs e)
         {
             CustomButton button = (CustomButton)sender;
@@ -161,11 +174,13 @@ namespace Calculator
             }
         }
 
+        // Handles text change in TxtDisplay1
         private void TxtDisplay1_TextChanged(object sender, EventArgs e)
         {
             AdjustFontSize();
         }
 
+        // Adjusts font size based on text length
         private void AdjustFontSize()
         {
             const int maxWidth = 300; // Adjust as needed
