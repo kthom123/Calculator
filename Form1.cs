@@ -7,7 +7,7 @@ namespace Calculator
     public partial class Form1 : Form
     {
         // Fields
-        Double result = 0;
+        double result = 0;
         string operation = string.Empty;
         bool enterValue = false;
         bool isResultDisplayed = false;
@@ -18,20 +18,23 @@ namespace Calculator
             TxtDisplay1.Text = "0";
             TxtDisplay1.MaxLength = 20;
             TxtDisplay1.TextAlign = HorizontalAlignment.Right;
-            TxtDisplay1.Font = new Font("Gadugi", 34, FontStyle.Bold); // Initial font settings
+            TxtDisplay1.Font = new Font("Gadugi", 34, FontStyle.Bold);
             TxtDisplay1.WordWrap = false;
             TxtDisplay1.AutoSize = false;
-            TxtDisplay1.TextChanged += TxtDisplay1_TextChanged; // Attach the TextChanged event
+            TxtDisplay1.TextChanged += TxtDisplay1_TextChanged;
         }
 
         private void BtnNum_Click(object sender, EventArgs e)
         {
-            if (TxtDisplay1.Text.Length >= TxtDisplay1.MaxLength)
+            if (TxtDisplay1.Text.Length >= 20)
                 return;
 
-            if (TxtDisplay1.Text == "0" || enterValue) TxtDisplay1.Text = string.Empty;
+            if (TxtDisplay1.Text == "0" || enterValue)
+            {
+                TxtDisplay1.Text = string.Empty;
+                enterValue = false;
+            }
 
-            enterValue = false;
             CustomButton button = (CustomButton)sender;
             if (button.Text == ".")
             {
@@ -42,6 +45,7 @@ namespace Calculator
             {
                 TxtDisplay1.Text += button.Text;
             }
+
             isResultDisplayed = false;
         }
 
@@ -54,7 +58,7 @@ namespace Calculator
             }
             else
             {
-                result = Double.Parse(TxtDisplay1.Text);
+                result = double.Parse(TxtDisplay1.Text);
             }
 
             CustomButton button = (CustomButton)sender;
@@ -68,7 +72,7 @@ namespace Calculator
             if (operation == string.Empty)
                 return;
 
-            double secondNum = Double.Parse(TxtDisplay1.Text);
+            double secondNum = double.Parse(TxtDisplay1.Text);
 
             switch (operation)
             {
@@ -86,27 +90,22 @@ namespace Calculator
                     break;
             }
 
-            result = Double.Parse(TxtDisplay1.Text);
+            result = double.Parse(TxtDisplay1.Text);
             TxtDisplay2.Text = string.Empty;
             operation = string.Empty;
             enterValue = false;
             isResultDisplayed = true;
         }
 
-        private void BtnDelete_Click(object sender, EventArgs e)
-        {
-            if (TxtDisplay1.Text.Length > 0)
-                TxtDisplay1.Text = TxtDisplay1.Text.Remove(TxtDisplay1.Text.Length - 1, 1);
-            if (TxtDisplay1.Text == string.Empty) TxtDisplay1.Text = "0";
-        }
-
         private void BtnC_Click(object sender, EventArgs e)
         {
-            TxtDisplay1.Text = "0";
-            if (isResultDisplayed)
+            if (TxtDisplay1.Text.Length > 1)
             {
-                result = 0;
-                TxtDisplay2.Text = string.Empty;
+                TxtDisplay1.Text = TxtDisplay1.Text.Remove(TxtDisplay1.Text.Length - 1, 1);
+            }
+            else
+            {
+                TxtDisplay1.Text = "0";
             }
         }
 
@@ -126,7 +125,7 @@ namespace Calculator
             {
                 case "√x":
                     TxtDisplay2.Text = $"√({TxtDisplay1.Text})";
-                    TxtDisplay1.Text = Convert.ToString(Math.Sqrt(Double.Parse(TxtDisplay1.Text)));
+                    TxtDisplay1.Text = Convert.ToString(Math.Sqrt(double.Parse(TxtDisplay1.Text)));
                     break;
                 case "x²":
                     TxtDisplay2.Text = $"({TxtDisplay1.Text})²";
@@ -138,7 +137,7 @@ namespace Calculator
                     break;
                 case "%":
                     TxtDisplay2.Text = $"%({TxtDisplay1.Text})";
-                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) / Convert.ToDouble(100));
+                    TxtDisplay1.Text = Convert.ToString(Convert.ToDouble(TxtDisplay1.Text) / 100);
                     break;
                 case "±":
                     TxtDisplay1.Text = Convert.ToString(-1 * Convert.ToDouble(TxtDisplay1.Text));

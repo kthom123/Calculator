@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Title = new TextBox();
             TxtDisplay1 = new TextBox();
             customButton1 = new CustomButton();
@@ -37,7 +36,6 @@
             customButton4 = new CustomButton();
             customButton5 = new CustomButton();
             customButton6 = new CustomButton();
-            BtnDelete = new CustomButton();
             BtnC = new CustomButton();
             BtnAC = new CustomButton();
             BtnPercent = new CustomButton();
@@ -209,26 +207,6 @@
             customButton6.TextColor = Color.White;
             customButton6.UseVisualStyleBackColor = false;
             // 
-            // BtnDelete
-            // 
-            BtnDelete.BackColor = Color.FromArgb(50, 50, 50);
-            BtnDelete.BackgroundColor = Color.FromArgb(50, 50, 50);
-            BtnDelete.BorderColor = Color.FromArgb(32, 32, 32);
-            BtnDelete.BorderRadius = 10;
-            BtnDelete.BorderSize = 0;
-            BtnDelete.FlatAppearance.BorderSize = 0;
-            BtnDelete.FlatStyle = FlatStyle.Flat;
-            BtnDelete.ForeColor = Color.White;
-            BtnDelete.Image = (Image)resources.GetObject("BtnDelete.Image");
-            BtnDelete.Location = new Point(275, 215);
-            BtnDelete.Margin = new Padding(0);
-            BtnDelete.Name = "BtnDelete";
-            BtnDelete.Size = new Size(85, 50);
-            BtnDelete.TabIndex = 15;
-            BtnDelete.TextColor = Color.White;
-            BtnDelete.UseVisualStyleBackColor = false;
-            BtnDelete.Click += BtnDelete_Click;
-            // 
             // BtnC
             // 
             BtnC.BackColor = Color.FromArgb(50, 50, 50);
@@ -239,10 +217,10 @@
             BtnC.FlatAppearance.BorderSize = 0;
             BtnC.FlatStyle = FlatStyle.Flat;
             BtnC.ForeColor = Color.White;
-            BtnC.Location = new Point(187, 215);
+            BtnC.Location = new Point(232, 215);
             BtnC.Margin = new Padding(0);
             BtnC.Name = "BtnC";
-            BtnC.Size = new Size(85, 50);
+            BtnC.Size = new Size(130, 50);
             BtnC.TabIndex = 16;
             BtnC.Text = "C";
             BtnC.TextColor = Color.White;
@@ -262,7 +240,7 @@
             BtnAC.Location = new Point(99, 215);
             BtnAC.Margin = new Padding(0);
             BtnAC.Name = "BtnAC";
-            BtnAC.Size = new Size(85, 50);
+            BtnAC.Size = new Size(130, 50);
             BtnAC.TabIndex = 17;
             BtnAC.Text = "AC";
             BtnAC.TextColor = Color.White;
@@ -745,7 +723,6 @@
             Controls.Add(BtnPercent);
             Controls.Add(BtnAC);
             Controls.Add(BtnC);
-            Controls.Add(BtnDelete);
             Controls.Add(customButton6);
             Controls.Add(customButton5);
             Controls.Add(customButton4);
@@ -774,7 +751,6 @@
         private CustomButton customButton4;
         private CustomButton customButton5;
         private CustomButton customButton6;
-        private CustomButton BtnDelete;
         private CustomButton BtnC;
         private CustomButton BtnAC;
         private CustomButton BtnPercent;
