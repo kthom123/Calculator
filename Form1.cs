@@ -107,6 +107,7 @@ namespace Calculator
             {
                 TxtDisplay1.Text = "0";
             }
+            ResetFontSize(); // Reset font size after clearing
         }
 
         private void BtnAC_Click(object sender, EventArgs e)
@@ -115,6 +116,12 @@ namespace Calculator
             result = 0;
             operation = string.Empty;
             TxtDisplay2.Text = string.Empty;
+            ResetFontSize(); // Reset font size after clearing
+        }
+
+        private void ResetFontSize()
+        {
+            TxtDisplay1.Font = new Font("Gadugi", 34, FontStyle.Bold); // Reset font size to initial size
         }
 
         private void BtnOperations_Click(object sender, EventArgs e)
